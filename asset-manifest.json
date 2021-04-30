@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lejeudepiste-rodez.github.io/static/css/main.dcd7839a.chunk.css",
-    "main.js": "/lejeudepiste-rodez.github.io/static/js/main.bdb6ff03.chunk.js",
-    "main.js.map": "/lejeudepiste-rodez.github.io/static/js/main.bdb6ff03.chunk.js.map",
-    "runtime-main.js": "/lejeudepiste-rodez.github.io/static/js/runtime-main.23607f5a.js",
-    "runtime-main.js.map": "/lejeudepiste-rodez.github.io/static/js/runtime-main.23607f5a.js.map",
-    "static/js/2.0a68ce93.chunk.js": "/lejeudepiste-rodez.github.io/static/js/2.0a68ce93.chunk.js",
-    "static/js/2.0a68ce93.chunk.js.map": "/lejeudepiste-rodez.github.io/static/js/2.0a68ce93.chunk.js.map",
-    "index.html": "/lejeudepiste-rodez.github.io/index.html",
-    "static/css/main.dcd7839a.chunk.css.map": "/lejeudepiste-rodez.github.io/static/css/main.dcd7839a.chunk.css.map",
-    "static/js/2.0a68ce93.chunk.js.LICENSE.txt": "/lejeudepiste-rodez.github.io/static/js/2.0a68ce93.chunk.js.LICENSE.txt",
-    "static/media/enigma.css": "/lejeudepiste-rodez.github.io/static/media/Cathé.9c9b444b.jpg",
-    "static/media/securityadvices.css": "/lejeudepiste-rodez.github.io/static/media/Fond.bbd9efc3.png"
+    "main.css": "/lejeudepiste.github.io/static/css/main.6ebfdace.chunk.css",
+    "main.js": "/lejeudepiste.github.io/static/js/main.bdb6ff03.chunk.js",
+    "main.js.map": "/lejeudepiste.github.io/static/js/main.bdb6ff03.chunk.js.map",
+    "runtime-main.js": "/lejeudepiste.github.io/static/js/runtime-main.9438e829.js",
+    "runtime-main.js.map": "/lejeudepiste.github.io/static/js/runtime-main.9438e829.js.map",
+    "static/js/2.0a68ce93.chunk.js": "/lejeudepiste.github.io/static/js/2.0a68ce93.chunk.js",
+    "static/js/2.0a68ce93.chunk.js.map": "/lejeudepiste.github.io/static/js/2.0a68ce93.chunk.js.map",
+    "index.html": "/lejeudepiste.github.io/index.html",
+    "static/css/main.6ebfdace.chunk.css.map": "/lejeudepiste.github.io/static/css/main.6ebfdace.chunk.css.map",
+    "static/js/2.0a68ce93.chunk.js.LICENSE.txt": "/lejeudepiste.github.io/static/js/2.0a68ce93.chunk.js.LICENSE.txt",
+    "static/media/enigma.css": "/lejeudepiste.github.io/static/media/Cathé.9c9b444b.jpg",
+    "static/media/securityadvices.css": "/lejeudepiste.github.io/static/media/Fond.bbd9efc3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.23607f5a.js",
+    "static/js/runtime-main.9438e829.js",
     "static/js/2.0a68ce93.chunk.js",
-    "static/css/main.dcd7839a.chunk.css",
+    "static/css/main.6ebfdace.chunk.css",
     "static/js/main.bdb6ff03.chunk.js"
   ]
 }
