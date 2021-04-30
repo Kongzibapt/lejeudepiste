@@ -29,15 +29,10 @@
 
         #aiguille{
             position:absolute;
-            animation : rotate 10s infinite;
             height:18vh;
             width:auto;
         }
 
-        @keyframes rotate{
-            0% {transform:rotate(0deg)}
-            100% {transform:rotate(3600deg)}
-        }
 
     #buttonBlock{
         height:20vh;

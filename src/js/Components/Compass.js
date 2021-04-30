@@ -16,10 +16,14 @@ import Header from './Header';
 
     componentDidMount(){
       navigator.geolocation.watchPosition((position)=>{
+        if (position.coords.heading == null){
+          this.setState({direction:0})
+        }
         this.setState({lat:position.coords.latitude,long:position.coords.longitude,direction:position.coords.heading})
         console.log(this.state);
       })
     }
+
 
 
     render() {
@@ -27,7 +31,7 @@ import Header from './Header';
         <div id="compass">
             <Header/>
                 <div id="roundBack">
-                  <img id="aiguille" src='img\Aiguille.png' alt="aiguille"/>
+                  <img style={"tranform:rotate("+this.state.direction+"deg)"} id="aiguille" src='img\Aiguille.png' alt="aiguille"/>
                   <img id="logoCompass" src='img\Boussole.png' alt="logo"/>
                 </div>
                 <div id="buttonBlock" onClick={this.props.handleEnigma}>
