@@ -1,0 +1,213 @@
+#home{
+    background-image: url(../../img/Fond.png);
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#transpBlock{
+    height:40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #transpBox{
+        height:100%;
+        width:85vw;
+        background: rgba(0, 0, 0, 0.75);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        #secuTitleBlock{
+            flex:1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #secuTitleTxt{
+                margin:0;
+                color:white;
+                font-size:6vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+            }
+
+        #secuContentBlock{
+            flex:4;
+            width:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #secuContentBox{
+                padding:0vh 3vw 0vh 3vw;
+                height:100%;
+                width:75%;
+                background: rgba(38, 38, 38, 0.75);
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+                #secuContentTxtBlock{
+                    flex:6;
+                    width:100%;
+                    display:flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+            
+                    #secuContentTxt{
+                        margin-top:1vh;;
+                        color:white;
+                        font-size:4vw;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 400;
+                        animation:fade 2s forwards;
+                    }
+
+
+                #secuTapBlock{
+                    width:100%;
+                    flex:1;
+                    display:flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                    #secuTapBox{
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        /* #secuTap{
+
+                        } */
+
+                            #tap{
+                                height:1.2vh;
+                                width:auto;
+                                position:relative;
+                                bottom:0;
+                                animation: bounce 1s infinite;
+                            }
+
+                            @keyframes bounce{
+                                50%{bottom:1vh}
+                            }
+
+
+
+                        #secuTapTxt{
+                            margin:0;
+                            padding-right:2vw;
+                            padding-bottom:0.4vh;
+                            color:white;
+                            font-size:3.2vw;
+                            font-family: 'Sansita Swashed',cursive;
+                            font-weight: 400;
+                        }
+
+
+        #secuAcceptBlock{
+            flex:1;
+            width:95%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #acceptCaseBlock{
+                flex:1;
+                height:50%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #acceptCase{
+                    width:35%;
+                    height:55%;
+                    background-color: white;
+                    border:1vw solid #000000;
+                    filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+                    border-radius:2vw;
+                    box-shadow: inset 1.2vw 0.6vh 0.5vh rgba(0, 0, 0, 0.56);
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                    #check{
+                        position:relative;
+                        bottom:0.5vh;
+                        left:0.3vw;
+                        height:4.2vh;
+                        width:auto;
+                    }
+
+            #acceptTxtBlock{
+                flex:6;
+            }
+
+                #acceptTxt{
+                    margin:0;
+                    color:white;
+                    font-size:4vw;
+                    font-family: 'Sansita Swashed',cursive;
+                    font-weight: 400;
+                    padding-left:1vw;
+                }
+
+#buttonBlock{
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #greenButton{
+        background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+        border:1vw solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:6vh;
+        border-radius:10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 5vw 0.8vh 5vw;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    #greenButton:active{
+        background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+    }
+
+        #buttonTxt{
+            margin:0;
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+            color:white;
+            font-size:6vw;
+            font-family: 'Sansita Swashed',cursive;
+            font-weight: 700;
+        }
+
+            #link{
+                text-decoration:none;
+            }

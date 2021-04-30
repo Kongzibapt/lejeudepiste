@@ -1,0 +1,104 @@
+#home{
+    background-image: url(../../img/Fond.png);
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#transpBlock{
+    height:40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+}
+
+    #transpBox{
+        height:100%;
+        width:85vw;
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+        #cathé{
+            width:70vw;
+            height:auto;
+        }
+
+        #cathéStroke{
+            stroke-width:15px;
+            stroke-dasharray: 5500;
+            stroke-dashoffset: 5500;
+            animation: draw 6s ease-out forwards;
+}
+
+#rodez{
+    margin-top:5vh;
+    width:40vw;
+    height:auto;
+}
+
+#rodezStroke{
+    stroke-width:20px;
+    stroke-dasharray: 260;
+    stroke-dashoffset: 0;
+    animation: draw2 6s ease-out forwards;
+}
+
+@keyframes draw2 {
+    0% {stroke-dashoffset: 260}
+    100% {stroke-dashoffset: 0}
+  }
+
+        
+
+@keyframes draw {
+  0% {stroke-dashoffset: 5500}
+  100% {stroke-dashoffset: 0}
+}
+
+#buttonBlock{
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+}
+
+
+#blueButton{
+    background:linear-gradient(180deg, #091688 0%, #0A0D21 100%);
+    border:1vw solid #000000;
+    filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+    height:6vh;
+    border-radius:10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 5vw 0.8vh 5vw;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#blueButton:active{
+    background:linear-gradient(180deg,  #0A0D21 0%, #091688 100%);
+}
+
+    #buttonTxt{
+        margin:0;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+        color:white;
+        font-size:6vw;
+        font-family: 'Sansita Swashed',cursive;
+        font-weight: 700;
+    }
+
+        #link{
+            text-decoration:none;
+        }

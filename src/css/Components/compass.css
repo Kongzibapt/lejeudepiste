@@ -1,0 +1,90 @@
+#compass{
+    background-image: url(../../img/Fond.png);
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+    #roundBack{
+        height:35vh;
+        width:35vh;
+        z-index:1;
+        border-radius:100vw;
+        background: rgba(0, 0, 0, 0.75);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #logoCompass{
+            margin-bottom:3.2vh;
+            height:30vh;
+            width:auto;
+        }
+
+        #aiguille{
+            position:absolute;
+            animation : rotate 10s infinite;
+            height:18vh;
+            width:auto;
+        }
+
+        @keyframes rotate{
+            0% {transform:rotate(0deg)}
+            100% {transform:rotate(3600deg)}
+        }
+
+    #buttonBlock{
+        height:20vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+    }
+    
+        #greenButton{
+            background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+            border:1vw solid #000000;
+            filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+            height:6vh;
+            border-radius:10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:0 5vw 0.8vh 5vw;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+    
+        #greenButton:active{
+            background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+        }
+    
+            #buttonTxt{
+                margin:0;
+                -webkit-user-select: none; /* Safari */        
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* IE10+/Edge */
+                user-select: none; /* Standard */
+                color:white;
+                font-size:6vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+            }
+    
+                #link{
+                    text-decoration:none;
+                }
+
+    #coord{
+        z-index:1;
+        color:white;
+        font-size:3vw;
+        font-family: 'Sansita Swashed',cursive;
+        font-weight: 700;
+    }

@@ -1,0 +1,223 @@
+#enigma{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    #back{
+        position:absolute;
+        z-index:-1;
+        height:100vh;
+        width:100vw;
+        background-image:url("../../img/Cathé.jpg");
+        background-repeat:no-repeat;
+        background-position-x:center;
+        background-size: cover;
+        animation : blur 4s 1s forwards;
+    }
+
+    @keyframes blur {
+        0% {filter: blur(0px)}
+        100% {filter: blur(3px)}
+    }
+
+    #transpBlockTitle{
+        margin-top:5vh;
+        height:10vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:4vh;
+        z-index:1;
+        opacity:0;
+        animation : fadeIn 1s 3s both;
+    }
+    
+        #transpBoxTitle{
+            height:100%;
+            width:78vw;
+            background: rgba(16, 16, 16, 0.63);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius:2vw;
+            
+        }
+
+        @keyframes fadeIn {
+            0% {opacity:0}
+            100% {opacity:1}
+        }
+
+    #transpBlockEnigma{
+        height:40vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+        animation : fadeIn 1s 3.5s both;
+    }
+    
+    
+        #transpBoxEnigma{
+            height:100%;
+            width:78vw;
+            background: rgba(16, 16, 16, 0.63);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius:2vw;
+        }
+
+            #titleEnigmaTxt{
+                margin:0;
+                color:white;
+                font-size:9vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+            }
+
+    #littleCharBlock {
+        margin-top:3vh;
+        height:10vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        #littleCharBox{
+            height:7vh;
+            width:7vh;
+            z-index:1;
+            background: linear-gradient(180deg, #091688 0%, #000000 100%);
+            border: 0.6vw solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: -0.2vw 0.2vw 1.5vw rgba(255, 255, 255, 0.75);
+            border-radius: 100vw;
+            animation : fadeIn 1s 4s both;
+        }
+
+    #bulleTriangleBlock{
+        z-index:1;
+        height:10vh;
+        width:7vw;
+        display:flex;
+        justify-content:flex-end;
+        align-items:flex-start;
+        padding-top:5vh;
+        animation : growUpTriangle 1s 5s both;
+    }
+
+
+    @keyframes growUpTriangle {
+        0% {width:0vw;opacity:0}
+        100% {width:7vw;opacity:1}
+    }
+
+        #bulleTriangle{
+            width:3vw;
+            height:2vh;
+        }
+
+    #bulleBlock{
+        z-index:1;
+        width:65vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        animation : growUpBulle 1s 5s both;
+    }
+    
+
+    @keyframes growUpBulle {
+        0% {width:0vw;opacity:0}
+        100% {width:65vw;opacity:1}
+    }
+
+        #bulleBox{
+            width:100%;
+            height:8vh;
+            background: rgba(198, 198, 198, 0.38);
+            border-radius: 2vw;
+            display:flex;
+            flex-direction: column;
+            padding: 0.3vh 4vw 0.5vh 2vw;
+        }
+
+            #bulleTxt {
+                margin:0;
+                text-align: left;
+                color:white;
+                font-size:4vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+                animation : fadeInTxt 1.5s 6s both;
+            }
+
+            @keyframes fadeInTxt{
+                0% {opacity:0;font-size:0.1vw}
+                1% {opacity:0;font-size:4vw}
+                100% {opacity:1;font-size:4vw}
+            }
+
+            #bulleTapBlock{
+                display:flex;
+                justify-content:flex-end;
+                align-items:flex-end;
+                animation : fadeIn 1.5s 6s both;
+            }
+
+                #bulleTap{
+                    height:1.2vh;
+                    width:auto;
+                    position : relative;
+                    right:-2.5vw;
+                    bottom:0vh;
+                    animation: bounce 1s infinite;
+                }
+
+
+#buttonBlock{
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #greenButton{
+        background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+        border:1vw solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:6vh;
+        border-radius:10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 5vw 0.8vh 5vw;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    #greenButton:active{
+        background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+    }
+
+        #buttonTxt{
+            margin:0;
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+            color:white;
+            font-size:6vw;
+            font-family: 'Sansita Swashed',cursive;
+            font-weight: 700;
+        }
+
+            #link{
+                text-decoration:none;
+            }

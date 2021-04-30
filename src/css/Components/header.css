@@ -1,0 +1,147 @@
+#header{
+    position:absolute;
+    top:0;
+    width:100vw;
+    height:45vh;
+    background:linear-gradient(180deg, #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%);
+}
+
+    .animHead{
+        animation : wipeDown 1.5s 2s both;
+    }
+
+    @keyframes wipeDown {
+        0% {height:0vh;opacity:0}
+        100% {height:45vh;opacity:1}
+    }
+
+#headerBlock{
+    margin-top:1vh;
+    height:10vh;
+    display:flex;
+}
+
+#logoBlock{
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #logo{
+        height:8vh;
+        width:auto;
+    }
+
+#titleBlock{
+    flex:2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #titleTxt{
+        font-size:9.5vw;
+        font-family: 'Sansita Swashed',cursive;
+        color:white;
+        text-align:center;
+        font-weight: 700;
+    }
+
+#hambBlock{
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #hamb{
+        height:4.5vh;
+        width:13vw;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        z-index:2;
+    }
+
+        #hambUp{
+            position:relative;
+            height:0.7vh;
+            width:13vw;
+            background-color: white;
+            border-radius:1vw;
+        }
+
+        #hambMid{
+            position:relative;
+            top:0.2vh;
+            height:0.7vh;
+            width:13vw;
+            background-color: white;
+            border-radius:1vw;
+        }
+
+        #hambDown{
+            position:relative;
+            top:0.4vh;
+            height:0.7vh;
+            width:13vw;
+            background-color: white;
+            border-radius:1vw;
+        }   
+
+            .animationHambUp{
+                animation: hambUp 2s forwards;
+            }
+
+            .animationHambMid{
+                animation: hambMid 2s forwards;
+            }
+
+            .animationHambDown{
+                animation: hambDown 1.5s forwards;
+            }
+
+            @keyframes hambUp {
+                0%   {background-color:white;top:0vh}
+                100% {background-color:#C31515;transform:rotate(45deg);top:2vh}
+            }
+
+            @keyframes hambMid {
+                0%   {background-color:white}
+                100% {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
+            }
+
+            @keyframes hambDown {
+                0%   {opacity : 1}
+                100% {opacity : 0}
+            }
+
+            .animationHambUpInv{
+                animation: hambUpInv 2s forwards;
+            }
+
+            .animationHambMidInv{
+                animation: hambMidInv 2s forwards;
+            }
+
+            .animationHambDownInv{
+                animation: hambDownInv 1.5s forwards;
+            }
+
+            @keyframes hambUpInv {
+                0%   {background-color:#C31515;transform:rotate(45deg);top:2vh}
+                100% {background-color:white;top:0vh}
+                
+            }
+
+            @keyframes hambMidInv {
+                0%   {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
+                100% {background-color:white}
+            }
+
+            @keyframes hambDownInv {
+                0%   {opacity : 0}
+                100% {opacity : 1}
+            }
