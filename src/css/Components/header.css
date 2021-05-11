@@ -29,6 +29,7 @@
 }
 
     #logo{
+        z-index:1;
         height:8vh;
         width:auto;
     }
@@ -41,7 +42,7 @@
 }
 
     #titleTxt{
-        font-size:9.5vw;
+        font-size:8vw;
         font-family: 'Sansita Swashed',cursive;
         color:white;
         text-align:center;

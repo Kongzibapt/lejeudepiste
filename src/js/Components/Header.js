@@ -72,7 +72,7 @@ import Menu from './Menu';
                       <img id="logo" src='img\Logo.png' alt="logo"/>
                     </div>
                     <div id="titleBlock">
-                      <p id="titleTxt">Le Jeu de Piste</p>
+                      <p id="titleTxt">L'Ingrédient Secret</p>
                     </div>
                     <div id="hambBlock">
                       <div id="hamb" onClick={this.handleMenu}>

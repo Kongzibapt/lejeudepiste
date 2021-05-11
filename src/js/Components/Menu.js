@@ -54,7 +54,7 @@ import "../../css/Components/menu.css"
                 <p id="contactTxt">Contact</p>
             </div>
             <div id="leaveBlock">
-                <Link id="link">
+                <Link id="link" to="/">
                     <div id="redButton">
                         <p id="buttonTxt">Quitter la partie</p>
                     </div>

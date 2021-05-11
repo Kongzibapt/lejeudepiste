@@ -1,0 +1,316 @@
+#waiting{
+    flex:1;
+    background: linear-gradient(180deg, #000959 0%, #000000 100%);
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    overflow:hidden;
+}
+
+#keyBlock{
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+#key{
+    position:absolute;
+
+    left:-51%;
+    height:80%;
+    width:105%;
+    animation:glowUp 5s 2s forwards;
+}
+
+    @keyframes glowUp {
+        40% {height:80%;width:105%;left:-4%}
+        100% {height:1500%;width:1850%;left:-880%}
+    }
+
+#titleWaitingBlock{
+    width:85vw;
+    position:absolute;
+    height:20vh;
+    overflow:hidden;
+    
+}
+
+#titleWaitingUp{
+    
+    font-size:14vw;
+    margin:0;
+    font-family: 'Sansita Swashed',cursive;
+    color:white;
+    text-align:left;
+    font-weight: 700;
+    position:absolute;
+    right:0vw;
+    width:85vw;
+    animation: swipeRight 2s 2s forwards;
+}
+
+#titleWaitingDown{
+    padding-top:8vh;
+    font-size:14vw;
+    margin:0;
+    font-family: 'Sansita Swashed',cursive;
+    color:white;
+    text-align:left;
+    font-weight: 700;
+    position:absolute;
+    right:0vw;
+    width:85vw;
+    animation: swipeRight 2s 2.2s forwards;
+}
+
+    @keyframes swipeRight {
+        100% {right:-200vw;}
+    }
+
+#footerBlockBigWait{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:15vh;
+    right:0vw;
+    overflow: hidden;
+}
+
+#footerBlockWait{
+    position:absolute;
+    bottom:3vh;
+    width:100vw;
+    transform:rotate(180deg);
+    right:0;
+    overflow: hidden;
+    animation: swipeRight 2s 2.4s forwards;
+}
+
+@keyframes colorate{
+    100% {opacity:1}
+}
+
+#hambUpWait{
+    position:relative;
+    height:0.7vh;
+    width:13vw;
+    background-color: black;
+    border-radius:1vw;
+    /* animation: fadeIn 2s forwards; */
+}
+
+#hambMidWait{
+    position:relative;
+    top:0.2vh;
+    height:0.7vh;
+    width:13vw;
+    background-color: black;
+    border-radius:1vw;
+    /* animation: fadeIn 2s forwards; */
+}
+
+#hambDownWait{
+    position:relative;
+    top:0.4vh;
+    height:0.7vh;
+    width:13vw;
+    background-color: black;
+    border-radius:1vw;
+    /* animation: fadeIn 2s forwards; */
+}   
+.animationHambUpWait{
+    animation: hambUpWait 2s forwards;
+}
+
+.animationHambMidWait{
+    animation: hambMidWait 2s forwards;
+}
+
+.animationHambDownWait{
+    animation: hambDownWait 1.5s forwards;
+}
+
+@keyframes hambUpWait {
+    0%   {background-color:black;top:0vh}
+    100% {background-color:#C31515;transform:rotate(45deg);top:2vh}
+}
+
+@keyframes hambMidWait {
+    0%   {background-color:black}
+    100% {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
+}
+
+@keyframes hambDownWait {
+    0%   {opacity : 1}
+    100% {opacity : 0}
+}
+
+.animationHambUpInvWait{
+    animation: hambUpInvWait 2s forwards;
+}
+
+.animationHambMidInvWait{
+    animation: hambMidInvWait 2s forwards;
+}
+
+.animationHambDownInvWait{
+    animation: hambDownInvWait 1.5s forwards;
+}
+
+@keyframes hambUpInvWait {
+    0%   {background-color:#C31515;transform:rotate(45deg);top:2vh}
+    100% {background-color:black;top:0vh}
+    
+}
+
+@keyframes hambMidInvWait {
+    0%   {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
+    100% {background-color:black}
+}
+
+@keyframes hambDownInvWait {
+    0%   {opacity : 0}
+    100% {opacity : 1}
+}
+
+#titleBlockWait{
+    opacity:0;
+    flex:2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerBlockIn{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:15vh;
+    right:0vw;
+    overflow: hidden;
+}
+
+#footerBlockWaitIn{
+    z-index:1;
+    position:absolute;
+    bottom:3vh;
+    width:100vw;
+    transform:rotate(180deg);
+    right:0;
+    overflow: hidden;
+}
+
+.footerTxtWaitIn{
+    font-size:4vw;
+    margin:0;
+    font-family: 'Sansita Swashed',cursive;
+    color:black;
+    text-align:center;
+    font-weight: 400;
+    transform: rotate(-180deg);
+    animation: fadeIn 2s forwards;
+}
+
+#logoBlockWait{
+    z-index:1;
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s forwards;
+}
+
+#yellowBack{
+    position:absolute;
+    height:100%;
+    width:100vw;
+    animation: colorate 3s 5.5s forwards;
+    background: linear-gradient(180deg, #FFE925 0%, #A69923 100%);
+    opacity:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#holdTxtBlock{
+    width:80vw;
+    position:absolute;
+}
+
+#holdTxt{
+    font-size:8vw;
+    margin:0;
+    font-family: 'Sansita Swashed',cursive;
+    color:black;
+    text-align:center;
+    font-weight: 700;
+    animation: fadeInAndOut 6s 7s both;
+}
+
+@keyframes fadeInAndOut{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:1}
+    100% {opacity:0}
+}
+
+#newsletterBlock{
+    width:80vw;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#newsletter{
+    font-size:8vw;
+    margin:0;
+    font-family: 'Sansita Swashed',cursive;
+    color:black;
+    text-align:center;
+    font-weight: 700;
+    animation: fadeIn 2s 13s both;
+    margin-bottom:3vh;
+}
+
+#emailInput{
+        min-height: 30px;
+        font-size:5vw;
+        padding-bottom:0.5vh;
+        height:3.5vh;
+        width:60vw;
+        font-family: 'Sansita Swashed',cursive;
+        color:black;
+        border-radius:3vw;
+        padding-left:2vw;
+        border: 1vw solid #000000;
+        box-sizing: border-box;
+        box-shadow: -0.8vw 1.2vw 0.8vw rgba(0, 0, 0, 0.4);
+        opacity:0;
+        animation : fadeIn 1s 14s forwards;
+    }
+
+    #emailInput:focus{
+        outline:none;
+        border: 1vw solid #057B26;
+    }
+
+    #titleMenuTxtWait{
+        color:white;
+        margin:0;
+        opacity:0;
+        font-size:10vw;
+        font-family: 'Sansita Swashed',cursive;
+        font-weight: 700;
+        padding-bottom:5vh; 
+        padding-right:5vw;
+    }
