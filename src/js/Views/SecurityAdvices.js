@@ -1,8 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import "../../css/Views/securityadvices.css"
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
+
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        teamName:state.teamName
+    }
+}
+
 
  class SecurityAdvices extends React.Component {
 
@@ -74,7 +83,7 @@ import Header from '../Components/Header';
                             </div>
                         </div>
                         <div id="acceptTxtBlock">
-                            <p id="acceptTxt">"L'équipe" approuve les consignes de sécurité</p>
+                            <p id="acceptTxt">Tous les membres de {this.props.teamName.value} approuvent les consignes de sécurité</p>
                         </div>
                         </>
                         : null}
@@ -84,7 +93,7 @@ import Header from '../Components/Header';
             </div>
             <div id="buttonBlock">
                 {this.state.checked &&                    
-                <Link id="link" to="rules">
+                <Link id="link" to="tuto">
                     <div id="greenButton">
                         <p id="buttonTxt">Suivant</p>
                     </div>
@@ -97,4 +106,4 @@ import Header from '../Components/Header';
     }
   }
 
-  export default SecurityAdvices
+  export default connect(mapStateToProps)(SecurityAdvices)

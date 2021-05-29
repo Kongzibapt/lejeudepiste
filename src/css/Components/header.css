@@ -2,8 +2,9 @@
     position:absolute;
     top:0;
     width:100vw;
-    height:45vh;
+    height:45%;
     background:linear-gradient(180deg, #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%);
+    overflow:hidden;
 }
 
     .animHead{
@@ -11,13 +12,13 @@
     }
 
     @keyframes wipeDown {
-        0% {height:0vh;opacity:0}
-        100% {height:45vh;opacity:1}
+        0% {height:0}
+        100% {height:45%}
     }
 
 #headerBlock{
-    margin-top:1vh;
-    height:10vh;
+    margin-top:max(1%,10px);
+    height:30%;
     display:flex;
 }
 
@@ -30,7 +31,7 @@
 
     #logo{
         z-index:1;
-        height:8vh;
+        height:8%;
         width:auto;
     }
 
@@ -42,7 +43,7 @@
 }
 
     #titleTxt{
-        font-size:8vw;
+        font-size:min(8vw,4.2vh);
         font-family: 'Sansita Swashed',cursive;
         color:white;
         text-align:center;
@@ -57,7 +58,7 @@
 }
 
     #hamb{
-        height:4.5vh;
+        height:35%;
         width:13vw;
         display:flex;
         justify-content: space-between;

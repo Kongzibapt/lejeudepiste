@@ -1,0 +1,21 @@
+<svg width="116" height="1000" viewBox="0 0 116 1000" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_i)">
+<path d="M62.3189 0L62.3862 0.0646813L46.0589 84.561L48.4323 113.676L43.5371 129.567V135.715L62.376 151.491L72.3146 224.684L50.509 317.945V328.964L52.5116 337.664V348.567L66.9003 378.726L66.8261 386.962L46.0589 410.156L48.5 457.031L62.5 470.312L66.5 478.125L54.9591 512.818L66.8261 519.313L56.0717 546.804L69.5704 563.624L46.0589 585.199L51.2507 605.15L37.307 627.885L47.9873 641.109L34.0435 666.28L33.2277 683.679L39.2353 731.702L73.6497 798.979L66.0103 824.266L96.9387 875.073L91.5243 957.778L116 1000H2L45.5397 891.312L19.4323 842.826L34.711 809.071L12.5346 754.716V684.607L0.0742188 666.86L23.5857 643.545L11.1995 628.929L34.711 600.742L30.4093 578.123L52.3632 563.972L40.0512 550.748L52.4374 528.361L42.2763 522.677L57.4809 476.395L39.0128 465.375V404.825L56.0717 386.962L42.2021 352.511V336.272L37.8261 324.556L62.1535 228.396L51.6215 159.842L31.9668 138.499L42.9438 107.528L40.0512 87.3448L62.3189 0Z" fill="url(#pattern0)"/>
+</g>
+<defs>
+<filter id="filter0_i" x="0.0742188" y="0" width="119.926" height="1004" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="14" dy="19"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.75 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="translate(-1.92612) scale(0.0134784 0.0015625)"/>
+</pattern>
+<image id="image0" width="360" height="640" xlink:href="data:image/png;base64,
+</defs>
+</svg>

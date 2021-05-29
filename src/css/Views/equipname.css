@@ -10,6 +10,7 @@
 }
 
 #transpBlock{
+    z-index:1;
     height:40vh;
     display:flex;
     justify-content: center;
@@ -17,6 +18,7 @@
 }
 
     #transpBox{
+        z-index:1;
         height:100%;
         width:85vw;
         background: rgba(0, 0, 0, 0.75);
@@ -62,6 +64,7 @@
             #equipNameInput{
                 font-size:5vw;
                 padding-bottom:0.5vh;
+                min-height:30px;
                 height:3.5vh;
                 width:60vw;
                 font-family: 'Sansita Swashed',cursive;
@@ -81,6 +84,7 @@
             }
 
 #buttonBlock{
+    
     height:20vh;
     display:flex;
     justify-content: center;
@@ -88,6 +92,7 @@
 }
 
     #greenButton{
+        min-height:50px;
         background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
         border:1vw solid #000000;
         filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));

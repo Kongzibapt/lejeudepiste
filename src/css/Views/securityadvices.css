@@ -10,6 +10,7 @@
 }
 
 #transpBlock{
+    z-index:1;
     height:40vh;
     display:flex;
     justify-content: center;

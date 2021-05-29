@@ -2,9 +2,10 @@
     position:absolute;
     bottom:0;
     width:100vw;
-    height:45vh;
+    height:45%;
     background: linear-gradient(180deg, #101010 23.96%, rgba(49, 52, 54, 0) 83.33%);
     transform: rotate(-180deg);
+    overflow: hidden;
 }
 
     .animFoot{
@@ -12,16 +13,17 @@
     }
 
     @keyframes wipeUp {
-        0% {height:0;opacity:0}
-        100% {height:45vh;opacity:1}
+        0% {height:0}
+        100% {height:45%}
     }
 
 #footerBlock{
-    height:10vh;
+    height:30%;
     display:flex;
     justify-content: center;
     align-items:center;
-    flex-direction:column;    
+    flex-direction:column;   
+    overflow: hidden; 
 }
 
     .footerTxt{

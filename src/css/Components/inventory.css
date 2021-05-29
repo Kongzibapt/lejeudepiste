@@ -1,0 +1,22 @@
+#inventory{
+    height:5%;
+    width:50%;
+    position:absolute;
+    top:16%;
+    left:0%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    #inventoryBlock{
+        width:5vh;
+        height:5vh;
+        background: linear-gradient(180deg, #323232 0%, #000000 100%);
+        border:0.6vw solid #ffffff;
+        box-shadow: -0.5vw 0.5vw 1.5vw rgba(255, 255, 255, 0.75);
+        border-radius:8vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }

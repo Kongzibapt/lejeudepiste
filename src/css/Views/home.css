@@ -1,16 +1,18 @@
 #home{
+    flex:1;
     background-image: url(../../img/Fond.png);
-    height: 100vh; 
+    height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    overflow:hidden;
 }
 
 #transpBlock{
-    height:40vh;
+    height:40%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +23,7 @@
         height:100%;
         width:85vw;
         background: rgba(0, 0, 0, 0.75);
+        border-radius: 4vw;
     }
 
         #cathé{
@@ -36,7 +39,7 @@
 }
 
 #rodez{
-    margin-top:5vh;
+    margin-top:10%;
     width:40vw;
     height:auto;
 }
@@ -61,7 +64,7 @@
 }
 
 #buttonBlock{
-    height:20vh;
+    height:20%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -73,12 +76,12 @@
     background:linear-gradient(180deg, #091688 0%, #0A0D21 100%);
     border:1vw solid #000000;
     filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
-    height:6vh;
+    height:8%;
     border-radius:10vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 5vw 0.8vh 5vw;
+    padding:1.5% 5vw 2.5% 5vw;
     box-sizing: border-box;
     text-decoration: none;
 }

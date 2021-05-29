@@ -1,0 +1,396 @@
+#kiosqueenigma{
+    height:100%;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("../../img/Fond.png");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+    #kiosqueEnigmaBlock{
+        height:50%;
+        width:80%;
+        border-radius:5vw;
+        background: rgba(0, 0, 0, 0.75);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+
+        #letsGoBlock{
+            height:13%;
+            width:50%;
+            background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+            border: 0.7vw solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+            border-radius: 10vw;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        #letsGoBlock:active{
+            background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+        }
+
+        .animLetsGo{
+            animation:fadeIn 1s both;
+        }
+
+        .animLetsGoInv{
+            animation : fadeOut 1s both;
+        }
+
+            #letsGoTxt{
+                margin:0;
+                color:white;
+                font-size:5vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+                padding-bottom:2%
+            }
+
+        #enigmaTitleBlock{
+            width:100%;
+            height:13%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+            #enigmaTitleTxt{
+                margin:0;
+                color:white;
+                font-size:5.5vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+                padding-bottom:2%;
+                animation : fadeIn 1.5s both;
+            }
+
+        #enigmaListBlock{
+            height:55%;
+            width:85%;
+            background:url("../../img/Parchemin.png");
+            background-repeat:no-repeat;
+            background-position-x:center;
+            background-position-y:center;
+            background-size:cover;
+            animation : fadeIn 1.5s 0.5s both;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+            #enigmaItem1{
+                width:75%;
+                height:20%;
+                margin:0;
+                text-align:center;
+                color:black;
+                font-size:3.5vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+                padding-bottom:2%;
+                font-style:italic;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                animation : fadeIn 1.5s 1s both;
+            }
+
+            #enigmaItem2{
+                width:75%;
+                height:20%;
+                margin:0;
+                text-align:center;
+                color:black;
+                font-size:3.5vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+                padding-bottom:2%;
+                font-style:italic;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                animation : fadeIn 1.5s 2s both;
+            }
+            
+
+            #enigmaItem3{
+                width:78%;
+                height:20%;
+                margin:0;
+                text-align:center;
+                color:black;
+                font-size:3.5vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+                padding-bottom:2%;
+                font-style:italic;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                animation : fadeIn 1.5s 3s both;
+            }
+
+            #answerBlock{
+                z-index:1;
+                height:30%;
+                width:100%;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction: column;
+                animation : fadeIn 1.5s 3.5s both;
+            }
+
+                #answerTitleBlock{
+                    height:25%;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+
+                    #answerTitleTxt{
+                        margin:0;
+                        color:white;
+                        font-size:4vw;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 700;
+                        padding-bottom:2%;
+                    }
+
+                #answerCasesBlock{
+                    height:27%;
+                    width:80%;
+                    display:flex;
+                    justify-content:space-around;
+                    align-items:center;
+                }
+
+                    .case{
+                        height:75%;
+                        width:6.5%;
+                        border-radius:2vw;
+                        border: 1vw solid black;
+                        color:black;
+                        font-size:4vw;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 700;
+                        text-align:center;
+                        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.6);
+                    }
+
+                    .case:focus{
+                        outline:none;
+                        border: 1vw solid #057B26;
+                    }
+
+                    .greenCase{
+                        height:60%;
+                        width:6.5%;
+                        background-color:#057B26;
+                        border-radius:2vw;
+                        border: 1vw solid black;
+                        color:white;
+                        font-size:4vw;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 700;
+                        text-align:center;
+                        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.6);
+                    }
+
+                    .redCase{
+                        height:60%;
+                        width:6.5%;
+                        background-color:#C41515;
+                        border-radius:2vw;
+                        border: 1vw solid black;
+                        color:white;
+                        font-size:4vw;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 700;
+                        text-align:center;
+                        box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.6);
+                    }
+
+                #answerConfirmBlock{
+                    height:40%;
+                    width:100%;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+
+                    #answerConfirmBox{
+                        height:65%;
+                        width:40%;
+                        background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+                        border: 0.7vw solid #FFFFFF;
+                        box-sizing: border-box;
+                        box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+                        border-radius: 10vw;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                    }
+
+                    #answerConfirmBox:active{
+                        background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+                    }
+
+                    #answerConfirmTxt{
+                        margin:0;
+                        color:white;
+                        font-size:4vw;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 700;
+                        padding-bottom:5%;
+                    }
+
+        #compassBlock{
+            height:30%;
+            width:30%;
+            position:absolute;
+            top: 35%;
+            left:33%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            animation:goToInventory 3s both;
+        }   
+
+        @keyframes goToInventory {
+            30% {top:35%;left:33%;height:30%;width:30%;}
+            90% {top:15%;left:22%;height:7%;width:7%;opacity:1}
+            100% {top:15%;left:22%;height:7%;width:7%;opacity:0}
+        }
+
+        #choiceTitleBlock{
+            z-index:1;
+            height: 100%;
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            animation:goUp 1s 1s both;
+        }
+
+        @keyframes goUp {
+            0% {height:100%}
+            100% {height:15%}
+        }
+
+            #choiceTitleTxt{
+                margin:0;
+                color:white;
+                font-size:6vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+            }
+            
+        #choiceBlock{
+            z-index:1;
+            width:100%;
+            height:0%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            animation : takePlace 2s 1s both;
+        }
+
+        @keyframes takePlace{
+            0% {height:0%;opacity:0}
+            50%{height:85%;opacity:0}
+            100% {height:85%;opacity:1}
+        }
+
+            #compassChoiceBlock{
+                height:80%;
+                width:50%;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                flex-direction: column;
+            }
+
+                #compassChoiceImg{
+                    height:40%;
+                    width:auto;
+                }
+
+                #compassChoiceTxt{
+                    text-decoration: none;
+                    background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+                    border: 0.7vw solid #FFFFFF;
+                    box-sizing: border-box;
+                    box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+                    border-radius: 10vw;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    height:18%;
+                    width:75%;
+                    margin:0;
+                    color:white;
+                    font-size:5vw;
+                    font-family: 'Sansita Swashed',cursive;
+                    font-weight: 700;
+                    padding-bottom:5%;
+                }
+
+                #compassChoiceTxt:active{
+                    background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+                }
+
+            #soloChoiceBlock{
+                height:80%;
+                width:50%;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                flex-direction: column;
+            }
+
+                #soloChoiceImg{
+                    height:40%;
+                    width:auto;
+                    border-radius:5vw;
+                }
+
+                #soloChoiceTxt{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+                    border: 0.7vw solid #FFFFFF;
+                    box-sizing: border-box;
+                    box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+                    border-radius: 10vw;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    height:18%;
+                    width:60%;
+                    margin:0;
+                    color:white;
+                    font-size:5vw;
+                    font-family: 'Sansita Swashed',cursive;
+                    font-weight: 700;
+                    padding-bottom:5%;
+                }
+
+                #soloChoiceTxt:active{
+                    background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+                }

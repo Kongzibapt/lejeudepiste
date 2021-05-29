@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Email
+Route::get('/emails','App\Http\Controllers\EmailController@index');
+Route::post('/emails','App\Http\Controllers\EmailController@store');
+
+
+// Team
+Route::get('/teams','App\Http\Controllers\TeamController@index');
+Route::post('/teams','App\Http\Controllers\TeamController@store');

@@ -1,0 +1,25 @@
+#direction{
+    height:100%;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("../../img/Fond.png");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+    #directionCompassBlock{
+        height:50%;
+        width:50%;
+        position:absolute;
+        top: 25%;
+        left:25%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }

@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    overflow:hidden;
+    
 }
 
 #keyBlock{
@@ -26,7 +26,7 @@
     left:-51%;
     height:80%;
     width:105%;
-    animation:glowUp 5s 2s forwards;
+    animation:glowUp 5s 2s forwards ease-out;
 }
 
     @keyframes glowUp {
@@ -97,7 +97,29 @@
     100% {opacity:1}
 }
 
+#headerWait{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 45vh;
+    background: linear-gradient(
+    180deg
+    , #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%);
+}
+
+#hambWait{
+    min-height:30px;
+    height:4.5vh;
+    width:13vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index:2;
+}
+
 #hambUpWait{
+    min-height:5px;
     position:relative;
     height:0.7vh;
     width:13vw;
@@ -107,6 +129,7 @@
 }
 
 #hambMidWait{
+    min-height:5px;
     position:relative;
     top:0.2vh;
     height:0.7vh;
@@ -117,6 +140,7 @@
 }
 
 #hambDownWait{
+    min-height:5px;
     position:relative;
     top:0.4vh;
     height:0.7vh;
@@ -226,6 +250,12 @@
     align-items: center;
     animation: fadeIn 2s forwards;
 }
+#logo{
+    min-height:50px;
+    z-index:1;
+    height:8vh;
+    width:auto;
+}
 
 #yellowBack{
     position:absolute;
@@ -296,12 +326,22 @@
         box-sizing: border-box;
         box-shadow: -0.8vw 1.2vw 0.8vw rgba(0, 0, 0, 0.4);
         opacity:0;
-        animation : fadeIn 1s 14s forwards;
+        animation : fadeIn 1s 13.5s forwards;
     }
 
     #emailInput:focus{
         outline:none;
         border: 1vw solid #057B26;
+    }
+
+    #errorWaitTxt{
+        font-size:4vw;
+        font-weight: 700;
+        text-align:center;
+        height:3.5vh;
+        width:60vw;
+        font-family: 'Sansita Swashed',cursive;
+        color:#C31515;
     }
 
     #titleMenuTxtWait{
@@ -313,4 +353,51 @@
         font-weight: 700;
         padding-bottom:5vh; 
         padding-right:5vw;
+    }
+
+    .animNewsletterBlock{
+        animation: fadeOut 0.5s forwards;
+    }
+
+        @keyframes fadeOut{
+            0% {opacity:1}
+            100% {opacity:0}
+        }
+
+    #validateSvg{
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        animation: drawValidate 2s forwards;
+    }
+
+    @keyframes drawValidate {
+        0% {stroke-dashoffset: 300}
+        100% {stroke-dashoffset: 0}
+      }
+
+    #validationBlock{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #validateTxtBlock{
+        margin-top:18vh;
+        width:80vw;
+        position:absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #validateTxt{
+        font-size:8vw;
+        margin:0;
+        font-family: 'Sansita Swashed',cursive;
+        color:black;
+        text-align:center;
+        font-weight: 700;
+        animation: fadeIn 2s both;
     }

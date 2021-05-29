@@ -1,0 +1,689 @@
+#enigma{
+    height:100%;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+    #back{
+        position:absolute;
+        z-index:-1;
+        height:100%;
+        width:100vw;
+        /* background-repeat:no-repeat;
+        background-position-x:center;
+        background-size: cover; */
+        animation : blur 4s 1s forwards;
+    }
+
+    @keyframes blur {
+        0% {filter: blur(0px)}
+        100% {filter: blur(3px)}
+    }
+
+    #transpBlockTitle{
+        margin-top:5vh;
+        height:10vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:4vh;
+        z-index:0;
+        opacity:0;
+        animation : fadeIn 1s 3s both;
+    }
+    
+        #transpBoxTitle{
+            height:100%;
+            width:78vw;
+            background: rgba(16, 16, 16, 0.63);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius:2vw;
+            
+        }
+
+        @keyframes fadeIn {
+            0% {opacity:0}
+            100% {opacity:1}
+        }
+
+    #transpBlockEnigma{
+        height:40vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+        animation : fadeIn 1s 3.5s both;
+    }
+    
+    
+        #transpBoxEnigma{
+            height:100%;
+            width:78vw;
+            background: rgba(16, 16, 16, 0.63);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius:2vw;
+        }
+
+            #titleEnigmaTxt{
+                margin:0;
+                color:white;
+                font-size:9vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+            }
+
+    #littleCharBlock {
+        margin-top:3vh;
+        height:10vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        #littleCharBox{
+            height:7vh;
+            width:7vh;
+            z-index:1;
+            background: linear-gradient(180deg, #091688 0%, #000000 100%);
+            border: 0.6vw solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: -0.2vw 0.2vw 1.5vw rgba(255, 255, 255, 0.75);
+            border-radius: 100vw;
+            animation : fadeIn 1s 4s both;
+        }
+
+
+#buttonBlock{
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #greenButton{
+        background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+        border:1vw solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:6vh;
+        border-radius:10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 5vw 0.8vh 5vw;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    #greenButton:active{
+        background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+    }
+
+        #buttonTxt{
+            margin:0;
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+            color:white;
+            font-size:6vw;
+            font-family: 'Sansita Swashed',cursive;
+            font-weight: 700;
+        }
+
+            #link{
+                text-decoration:none;
+            }
+
+#tutoTxt{
+    color:white;
+    font-size:6vw;
+    font-family: 'Sansita Swashed',cursive;
+    font-weight: 400;
+    text-align: center;
+    padding:0 7vw 0 7vw;
+    animation : fadeIn 2s 1.5s both;
+}
+
+#failleBlock{
+    position:absolute;
+    top:0;
+    height:10%;
+    width:100%;
+    overflow:hidden;
+    animation: drawFaille 4s 1s both ease-out;
+}
+
+#faille{
+    position: absolute;
+    height:96vh;
+    width:100%;
+
+}
+
+@keyframes drawFaille{
+    0% {height:0%}
+    75% {height:100%;opacity:1}
+    100% {height:100%;opacity:0}
+}
+
+#transpBlockEnigmaTuto{
+    height:40vh;
+    margin-top:15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    animation : fadeIn 2s 1s both;
+}
+
+#continueButtonBlock{
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation : fadeIn 2s 4s both;
+}
+
+#continueButton{
+    background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+    border:1vw solid #000000;
+    filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+    height:6vh;
+    border-radius:10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 5vw 0.8vh 5vw;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#continueButtonTxt{
+    margin:0;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    color:white;
+    font-size:6vw;
+    font-family: 'Sansita Swashed',cursive;
+    font-weight: 700;
+}
+
+#continueButton:active{
+    background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+}
+
+#backTuto{
+    position:absolute;
+    z-index:-1;
+    height:100%;
+    width:100vw;
+    opacity:1;
+    animation : blur 1s 1s forwards;
+}
+
+#backTutoFaille{
+    position:absolute;
+    z-index:-1;
+    height:100%;
+    width:100vw;
+    opacity:1;
+}
+
+#backTutoBlack{
+    background-image: url("../../img/Fond.png");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-size: cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    animation: In;
+    animation-fill-mode: both;
+    animation-duration:0.5s;
+    animation-delay:4s;
+
+}
+
+@keyframes In{
+    0% {opacity:0}
+    100% {opacity:1}
+}
+
+#kio{
+    position:absolute;
+    overflow:hidden;
+    height:100%;
+    width:100%;
+}
+
+#leftKioBlock{
+    position: absolute;
+    left:-10%;
+    height:100%;
+    width:120%;
+    overflow:hidden;
+    animation: InAndSwipeLeft;
+    animation-fill-mode: both;
+    animation-duration:5s;
+    animation-delay:3.8s;
+}
+
+@keyframes InAndSwipeLeft{
+    0% {opacity:0}
+    10% {opacity:1;left:-10%}
+    100% {left:-80%}
+}
+
+#leftKio{
+    height:102.5%;
+    width:54%;
+    position: absolute;
+}
+
+#rightKioBlock{
+    position: absolute;
+    right:-10%;
+    height:100%;
+    width:120%;
+    overflow:hidden;
+    animation: InAndSwipeRight;
+    animation-fill-mode: both;
+    animation-duration:5s;
+    animation-delay:3.8s;
+}
+
+@keyframes InAndSwipeRight{
+    0% {opacity:0}
+    10% {opacity:1;right:-10%}
+    100% {right:-80%}
+}
+
+#rightKio{
+    height:102.5%;
+    width:57%;
+    position: absolute;
+    right:-14px;
+}
+
+#backSal{
+    background-image: url("../../img/Fond.png");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+}
+
+#salBlock{
+    z-index:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    animation : fadeIn 1s 0.5s both;
+}
+
+#salBlockMigrate{
+    z-index:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    opacity:1;
+}
+
+.salBlockMigrate{
+    position:absolute;
+    bottom:42%;
+    animation : migrate 1s forwards;
+}
+
+@keyframes migrate {
+    100% {position:absolute;bottom:13%}
+}
+
+#salBox{
+    
+    height:15vh;
+    width:15vh;
+    background: linear-gradient(180deg, #091688 0%, #000000 100%);
+    border: 0.6vw solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+    border-radius: 100vw;
+    margin-bottom:1vh;
+}
+
+@keyframes shrink {
+    0% {height:15vh;width:15vh;margin-bottom:1vh;}
+    100% {height:7vh;width:7vh;margin-bottom:0;}
+}
+
+#salBulleBlock{
+    height:35vh;
+    width:65vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    animation : growUpBulleSal 1s 1s both;
+}
+
+#salBulleBlockInv{
+    width:65vw;
+    height:32vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column
+}
+
+.salBulleBlockInv{
+    animation : growUpBulleSal 1s 1s forwards reverse;
+}
+
+@keyframes growUpBulleSal{
+    0% {height:0vh;opacity:0}
+    100% {height:32vh}
+}
+
+
+#salTriangleBlock{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin-bottom:-0.8%;
+    animation:growUpTriangleSal 1s both;
+}
+
+#salTriangleBlockInv{
+    opacity:1;
+    height:3vh;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin-bottom:-0.8%;
+}
+
+.salTriangleBlockInv{
+    animation:growUpTriangleSal 1s 0.5s forwards reverse;
+}
+
+@keyframes growUpTriangleSal{
+    0% {height:0;opacity:0}
+    100% {height:3vh;opacity:1}
+}
+
+    #salTriangle{
+        transform:rotate(90deg);
+        height:3vh
+    }
+
+    .salTriangleDisappear{
+        animation : disap 1s forwards;
+    }
+
+    @keyframes disap {
+        0% {height:3vh;}
+        100% {height:0vh;}
+    }
+
+#salBulleBox{
+    flex:10;
+    width:100%;
+    background: rgba(198, 198, 198, 0.38);
+    border-radius: 2vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#salBulleTxt{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:1vh 4vw 1vh 4vw;
+    animation:fadeInTxtSal 1s 2s both;
+    color:white;
+    font-family: 'Sansita Swashed',cursive;
+    font-weight: 400;
+    text-align:center;
+}
+
+#salBulleTxtInv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:1vh 4vw 1vh 4vw;
+    opacity:1;
+    font-size:5.5vw;
+    color:white;
+    font-family: 'Sansita Swashed',cursive;
+    font-weight: 400;
+    text-align:center;
+}
+
+.salBulleTxtInv{
+    animation:fadeInTxtSal 1s forwards reverse;
+}
+
+@keyframes fadeInTxtSal{
+    0% {opacity:0;font-size:0vw;padding:0}
+    20% {opacity:0;font-size:5.5vw;padding:1vh 4vw 1vh 4vw;}
+    100% {opacity:1;font-size:5.5vw;padding:1vh 4vw 1vh 4vw;}
+}
+
+#salBulleTapBlock{
+    position:absolute;
+    bottom:27%;
+    right:23%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    animation : fadeIn 1s 2s both;
+}
+
+
+#salBulleTapBlockInv{
+    opacity:0;
+}
+
+    #salBulleTap{
+        height:1.5vh;
+        width:auto;
+        position : relative;
+        right:-2.5vw;
+        bottom:0vh;
+        animation: bounce 1s infinite;
+    }
+
+    #blackFace{
+        position:absolute;
+        z-index:1;
+        height:100%;
+        width:100%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity:0;
+    }
+
+    .blackFaceIn{
+        animation:fadeIn 1s 4s both;
+    }
+
+    .blackFaceOut{
+        animation:fadeOut 0.5s both;
+    }
+
+    #notifPush{
+        height:1.7vh;
+        width:1.7vh;
+        border-radius:100vh; 
+        position:absolute;
+        right:38%;
+        top:7%;
+        background: #B91515;
+        opacity:0;
+    }
+
+    .notifPushIn{
+        animation:fadeIn 1s 4.5s both;
+    }
+
+    .notifPushOut{
+        animation:fadeOut 0.5s both;
+    }
+
+    #salBlockBottom{
+        z-index:1;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: row;
+        opacity:1;
+        position:absolute;
+        bottom:42%;
+    }
+
+    #salBoxBullet{
+        height:7vh;
+        width:7vh;
+        background: linear-gradient(180deg, #091688 0%, #000000 100%);
+        border: 0.6vw solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+        border-radius: 100vw;
+    }
+
+    #salBlockBullet{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    #salBulletTriangle{
+        z-index:1;
+        display:flex;
+        justify-content:flex-end;
+        align-items:flex-start;
+        animation : growUpTriangle 1s both;
+    }
+
+    #salBulletTriangleInv{
+        z-index:1;
+        display:flex;
+        justify-content:flex-end;
+        align-items:flex-start;
+    }
+
+    .salBulletTriangleInv{
+        animation : growUpTriangle 0.5s both reverse;
+    }
+
+    @keyframes growUpTriangle {
+        0% {width:0vw;opacity:0}
+        100% {width:7vw;opacity:1}
+    }
+
+        #triangleBullet{
+            width:3vw;
+            height:2vh;
+        }
+    
+    @keyframes growUpBulle {
+        0% {width:0vw;opacity:0}
+        100% {width:65vw;opacity:1}
+    }
+
+        #salBulletBox{
+            z-index:1;
+            width:65vw;
+            height:8.6vh;
+            background: rgba(198, 198, 198, 0.38);
+            border-radius: 2vw;
+            display:flex;
+            justify-content:center;
+            align-items:center; 
+            flex-direction: column;            
+            animation : growUpBulle 1s both;
+        }
+
+        #salBulletBoxInv{
+            z-index:1;
+            width:65vw;
+            height:8.6vh;
+            background: rgba(198, 198, 198, 0.38);
+            border-radius: 2vw;
+            display:flex;
+            justify-content:center;
+            align-items:center; 
+            flex-direction: column;
+        }
+
+        .salBulletBoxInv{
+            animation : growUpBulle 1.5s both reverse;
+        }
+
+            #salBulletTxt {
+                margin:0;
+                padding: 0.3vh 4vw 0.6vh 2vw;
+                text-align: left;
+                color:white;
+                font-size:4.5vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+                animation : fadeInTxt 1.5s 1s both;
+            }
+
+            @keyframes fadeInTxt{
+                0% {opacity:0;font-size:0.1vw}
+                1% {opacity:0;font-size:4.5vw}
+                100% {opacity:1;font-size:4.5vw}
+            }
+
+            #salBulletTapBlock{
+                display:flex;
+                justify-content:flex-end;
+                align-items:flex-end;
+                animation : fadeIn 1.5s 1s both;
+            }
+
+            #salBulletTapBlockInv{
+                display:flex;
+                justify-content:flex-end;
+                align-items:flex-end;
+            }
+
+            .salBulletTapBlockInv{
+                animation : fadeOut 0.2s both;
+            }
+
+                #salBulletTap{
+                    height:1.2vh;
+                    width:auto;
+                    position : absolute;
+                    right:2%;
+                    bottom:15%;
+                    animation: bounceTap 1s infinite;
+                }
+
+                @keyframes bounceTap {
+                    50% {bottom:25%}
+                }

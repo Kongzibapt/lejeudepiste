@@ -1,0 +1,53 @@
+#time{
+    height:5%;
+    width:100%;
+    position:absolute;
+    top:16%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    #timeBlock{
+        width:30%;
+        height:100%;
+        background:linear-gradient(180deg, #C41515 0%, #2D0E0E 100%);
+        border:0.6vw solid #ffffff;
+        box-shadow: -0.5vw 0.5vw 1.5vw rgba(255, 255, 255, 0.75);
+        border-radius:8vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        #hourglassBlock{
+            width:35%;
+            height:100%;
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            
+        }
+
+            #hourglassImg{
+                height:60%;
+                width:60%;
+            }
+
+        #timeTxtBlock{
+            width:70%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+            #timeTxt{
+                margin:0;
+                color:white;
+                font-size:4vw;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+                padding-bottom:4%;
+            }
+

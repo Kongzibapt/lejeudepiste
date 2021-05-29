@@ -1,7 +1,5 @@
 import React from 'react';
 import "../../css/Components/compass.css"
-import Footer from './Footer';
-import Header from './Header';
 
  class Compass extends React.Component {
 
@@ -37,25 +35,16 @@ import Header from './Header';
 
     render() {
       return (
-        <div id="compass">
-            <Header/>
-                <div id="roundBack">
-                  <img style={{transform:"rotate("+this.state.orientation + "deg)"}} id="aiguille" src='img\Aiguille.png' alt="aiguille"/>
-                  <img id="logoCompass" src='img\Boussole.png' alt="logo"/>
-                </div>
-                <div id="buttonBlock" onClick={this.props.handleEnigma}>
-                    <div id="greenButton">
-                        <p id="buttonTxt">Prochaine énigme !</p>
-                    </div>
-                </div>
-                <div id="coord">
-                    {this.state.lat} & {this.state.long} & {this.state.direction}
-                </div>
-                <div id="coord">
-                  {this.state.orientation}
-                </div>
-            <Footer/>
-        </div>
+          <div id="roundBack">
+            <img style={{transform:"rotate("+this.state.orientation + "deg)"}} id="aiguille" src='img\Aiguille.png' alt="aiguille"/>
+            <img id="logoCompass" src='img\Boussole.png' alt="logo"/>
+          </div>
+          /* <div id="coord">
+              {this.state.lat} & {this.state.long} & {this.state.direction}
+          </div>
+          <div id="coord">
+            {this.state.orientation}
+          </div> */
       )
     }
   }
