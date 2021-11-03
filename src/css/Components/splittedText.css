@@ -1,0 +1,25 @@
+.splittedText{
+    height:250px;
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+    .splittedTxt{
+        font-size:20px;
+        color:white;
+        margin:0;
+        font-family: 'Sansita Swashed',cursive;
+        text-align:center;
+        font-weight: 700;
+        position:absolute;
+    }
+
+    @keyframes fadeTxt {
+        0% {opacity:0}
+        20% {opacity:1}
+        90% {opacity:1}
+        100% {opacity:0}
+    }

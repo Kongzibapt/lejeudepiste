@@ -17,8 +17,6 @@ import Menu from './Menu';
       let titleBlock = document.getElementById("titleMenuBlock")
       let title = document.getElementById("titleMenuTxt")
       let item = document.getElementById("itemsBlock")
-      let contactBlock = document.getElementById("contactBlock")
-      let contact = document.getElementById("contactTxt")
       let leave = document.getElementById("leaveBlock")
 
       if (e.target.id !== "hamb"){
@@ -26,8 +24,8 @@ import Menu from './Menu';
       }
 
       if (this.state.onCross) {
-        e.target.childNodes[0].className = "animationHambUpInv"
-        e.target.childNodes[1].className = "animationHambMidInv"
+        e.target.childNodes[0].className = this.props.dark_theme ? "animationDarkHambUpInv" : "animationLightHambUpInv";
+        e.target.childNodes[1].className = this.props.dark_theme ? "animationDarkHambMidInv" : "animationLightHambMidInv";
         e.target.childNodes[2].className = "animationHambDownInv"
         this.setState({onCross:false},()=>{
           menu.className = "animMenuInv"
@@ -37,13 +35,12 @@ import Menu from './Menu';
           for (let i = 0;i<item.childElementCount;i++){
             item.childNodes[i].id = "animItemInv"+i.toString()
           }
-          contactBlock.className = "animContactBlockInv"
-          contact.className = "animContactInv"
-          leave.className = "animLeaveInv"
+          
+          !this.props.no_escape && (leave.className = "animLeaveInv")
         })
       } else {
-        e.target.childNodes[0].className = "animationHambUp"
-        e.target.childNodes[1].className = "animationHambMid"
+        e.target.childNodes[0].className = this.props.dark_theme ? "animationDarkHambUp" : "animationLightHambUp"; 
+        e.target.childNodes[1].className = this.props.dark_theme ? "animationDarkHambMid" : "animationLightHambMid";
         e.target.childNodes[2].className = "animationHambDown"
         this.setState({onCross:true},()=>{
           menu.className = "animMenu"
@@ -53,9 +50,8 @@ import Menu from './Menu';
           for (let i = 0;i<item.childElementCount;i++){
             item.childNodes[i].id = "animItem"+i.toString()
           }
-          contactBlock.className = "animContactBlock"
-          contact.className = "animContact"
-          leave.className = "animLeave"
+          
+          !this.props.no_escape && (leave.className = "animLeave")
         })
       }
       
@@ -66,19 +62,19 @@ import Menu from './Menu';
     render() {
       return (
             <div id="header">
-             <Menu/>
+             <Menu items={this.props.menuItems} quit_button = {!this.props.no_escape}/>
                 <div id="headerBlock">
                     <div id="logoBlock">
                       <img id="logo" src='img\Logo.png' alt="logo"/>
                     </div>
                     <div id="titleBlock">
-                      <p id="titleTxt">L'Ingrédient Secret</p>
+                      <p id={this.props.dark_theme ? "darkTitleTxt" : "lightTitleTxt"}>{this.props.title}</p>
                     </div>
                     <div id="hambBlock">
                       <div id="hamb" onClick={this.handleMenu}>
-                        <div id="hambUp"></div>
-                        <div id="hambMid"></div>
-                        <div id="hambDown"></div>
+                        <div id={this.props.dark_theme ? "darkHambUp" : "lightHambUp"}></div>
+                        <div id={this.props.dark_theme ? "darkHambMid" : "lightHambMid"}></div>
+                        <div id={this.props.dark_theme ? "darkHambDown" : "lightHambDown"}></div>
                       </div>
                     </div>
                 </div>

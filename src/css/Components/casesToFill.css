@@ -1,0 +1,104 @@
+.casesToFill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 50px;
+    flex-direction:column;
+}
+
+    .answerTitleBlock{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        .answerTitleTxt{
+            margin:0;
+            color:white;
+            font-size:22px;
+            font-family: 'Sansita Swashed',cursive;
+            font-weight: 700;
+        }
+
+.answerCasesBlock{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+}
+
+    .case{
+        height:30px;
+        width:20px;
+        border-radius:10px;
+        border: 2px solid black;
+        color:black;
+        font-size:18px;
+        font-family: 'Sansita Swashed',cursive;
+        font-weight: 700;
+        text-align:center;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .case:focus{
+        outline:none;
+        border: 2px solid #057B26;
+    }
+
+    .greenCase{
+        height:30px;
+        width:20px;
+        border-radius:10px;
+        background-color:#057B26;
+        border: 2px solid black;
+        color:white;
+        font-size:18px;
+        font-family: 'Sansita Swashed',cursive;
+        font-weight: 700;
+        text-align:center;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .redCase{
+        height:30px;
+        width:20px;
+        border-radius:10px;
+        background-color:#C41515;
+        border: 2px solid black;
+        color:white;
+        font-size:18px;
+        font-family: 'Sansita Swashed',cursive;
+        font-weight: 700;
+        text-align:center;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.6);
+    }
+
+@media (min-width:426px) {
+    .casesToFill{
+        height:100px;
+    }
+
+    .answerTitleTxt{
+        font-size:28px;
+    }
+
+    .case{
+        height:40px;
+        width:25px;
+        font-size:22px;
+    }
+
+    .green{
+        height:40px;
+        width:25px;
+    }
+
+    .red{
+        height:40px;
+        width:25px;
+    }
+
+    .answerCasesBlock{
+        margin-top:15px;
+    }
+}

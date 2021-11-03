@@ -1,5 +1,5 @@
 import React from "react"
-import "../../css/Components/bonus.css"
+import "../../css/Components/bonus.css";
 
 class Bonus extends React.Component {
 
@@ -9,15 +9,19 @@ class Bonus extends React.Component {
         }
     }
 
-
+    componentDidMount(){
+    }
 
 
 
     render(){
         return(
-            <div id="bonus">
-                <div id="bonusBlock">
-                </div>
+            <div className="parchemin">
+                <div className="parcheminBlock">
+                    <div className="parcheminTitle">
+                        <p className="parcheminTxt">Bonus</p>
+                    </div>
+                </div>      
             </div>
         )
     }

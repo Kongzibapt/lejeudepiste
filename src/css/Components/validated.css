@@ -1,0 +1,62 @@
+.validationBlock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:120px;
+    width:120px
+}
+
+    .validateSvg{
+        display:flex;
+        flex:2;
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        animation: drawValidate 2s forwards;
+    }
+
+    @keyframes drawValidate {
+        0% {stroke-dashoffset: 300}
+        100% {stroke-dashoffset: 0}
+    }
+
+    .validateTxtBlock{
+        z-index:1;
+        display:flex;
+        flex:1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .validateLightTxt{
+            font-size:25px;
+            margin:0;
+            font-family: 'Sansita Swashed',cursive;
+            color:white;
+            text-align:center;
+            font-weight: 700;
+            animation: fadeIn 2s both;
+        }
+        .validateDarkTxt{
+            font-size:25px;
+            margin:0;
+            font-family: 'Sansita Swashed',cursive;
+            color:black;
+            text-align:center;
+            font-weight: 700;
+            animation: fadeIn 2s both;
+        }
+
+@media (min-width:426px) {
+    .validateLightTxt{
+        font-size:35px;
+    }
+    .validateDarkTxt{
+        font-size:35px;
+    }
+    .validationBlock{
+        height:200px;
+        width:200px
+    }
+}

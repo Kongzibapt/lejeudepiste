@@ -1,4 +1,4 @@
-#waiting{
+.waiting{
     flex:1;
     background: linear-gradient(180deg, #000959 0%, #000000 100%);
     height: 100%;
@@ -9,7 +9,7 @@
     
 }
 
-#keyBlock{
+.keyBlock{
     position: absolute;
     width:100%;
     height:100%;
@@ -20,7 +20,7 @@
     overflow:hidden;
 }
 
-#key{
+.key{
     position:absolute;
 
     left:-51%;
@@ -97,7 +97,7 @@
     100% {opacity:1}
 }
 
-#headerWait{
+.headerWait{
     position: absolute;
     top: 0;
     width: 100vw;
@@ -107,110 +107,141 @@
     , #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%);
 }
 
-#hambWait{
-    min-height:30px;
-    height:4.5vh;
-    width:13vw;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    z-index:2;
-}
+    .headerBlock{
+        margin-top:10px;
+        display:flex;
+    }
 
-#hambUpWait{
-    min-height:5px;
-    position:relative;
-    height:0.7vh;
-    width:13vw;
-    background-color: black;
-    border-radius:1vw;
-    /* animation: fadeIn 2s forwards; */
-}
-
-#hambMidWait{
-    min-height:5px;
-    position:relative;
-    top:0.2vh;
-    height:0.7vh;
-    width:13vw;
-    background-color: black;
-    border-radius:1vw;
-    /* animation: fadeIn 2s forwards; */
-}
-
-#hambDownWait{
-    min-height:5px;
-    position:relative;
-    top:0.4vh;
-    height:0.7vh;
-    width:13vw;
-    background-color: black;
-    border-radius:1vw;
-    /* animation: fadeIn 2s forwards; */
-}   
-.animationHambUpWait{
-    animation: hambUpWait 2s forwards;
-}
-
-.animationHambMidWait{
-    animation: hambMidWait 2s forwards;
-}
-
-.animationHambDownWait{
-    animation: hambDownWait 1.5s forwards;
-}
-
-@keyframes hambUpWait {
-    0%   {background-color:black;top:0vh}
-    100% {background-color:#C31515;transform:rotate(45deg);top:2vh}
-}
-
-@keyframes hambMidWait {
-    0%   {background-color:black}
-    100% {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
-}
-
-@keyframes hambDownWait {
-    0%   {opacity : 1}
-    100% {opacity : 0}
-}
-
-.animationHambUpInvWait{
-    animation: hambUpInvWait 2s forwards;
-}
-
-.animationHambMidInvWait{
-    animation: hambMidInvWait 2s forwards;
-}
-
-.animationHambDownInvWait{
-    animation: hambDownInvWait 1.5s forwards;
-}
-
-@keyframes hambUpInvWait {
-    0%   {background-color:#C31515;transform:rotate(45deg);top:2vh}
-    100% {background-color:black;top:0vh}
+        .logoBlockWait{
+            z-index:1;
+            flex:1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 2s forwards;
+        }
+        .logo{
+            z-index:1;
+            height: 60px;
+            width:auto;
+        }
     
-}
+    .titleBlockWait{
+        opacity:0;
+        flex:2;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-@keyframes hambMidInvWait {
-    0%   {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
-    100% {background-color:black}
-}
+        .titleTxt{
+            font-size:16px;
+            font-family: 'Sansita Swashed',cursive;
+            color:white;
+            text-align:center;
+            font-weight: 700;
+        }
+    
+    .hambBlock{
+        flex:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-@keyframes hambDownInvWait {
-    0%   {opacity : 0}
-    100% {opacity : 1}
-}
+        #hambWait{
+            height:30px;
+            width:40px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            z-index:2;
+        }
 
-#titleBlockWait{
-    opacity:0;
-    flex:2;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+            #hambUpWait{
+                position:relative;
+                height:6px;
+                width:40px;
+                background-color: black;
+                border-radius:1vw;
+                /* animation: fadeIn 2s forwards; */
+            }
+
+            #hambMidWait{
+                position:relative;
+                top:0.2vh;
+                height:6px;
+                width:40px;
+                background-color: black;
+                border-radius:1vw;
+                /* animation: fadeIn 2s forwards; */
+            }
+
+            #hambDownWait{  
+                position:relative;
+                top:0.4vh;
+                height:6px;
+                width:40px;
+                background-color: black;
+                border-radius:1vw;
+                /* animation: fadeIn 2s forwards; */
+            }   
+
+            .animationHambUpWait{
+                animation: hambUpWait 2s forwards;
+            }
+
+            .animationHambMidWait{
+                animation: hambMidWait 2s forwards;
+            }
+
+            .animationHambDownWait{
+                animation: hambDownWait 1.5s forwards;
+            }
+
+            @keyframes hambUpWait {
+                0%   {background-color:black;top:0vh}
+                100% {background-color:#C31515;transform:rotate(45deg);top:15px}
+            }
+
+            @keyframes hambMidWait {
+                0%   {background-color:black}
+                100% {background-color:#C31515;transform:rotate(-45deg)}
+            }
+
+            @keyframes hambDownWait {
+                0%   {opacity : 1}
+                100% {opacity : 0}
+            }
+
+            .animationHambUpInvWait{
+                animation: hambUpInvWait 2s forwards;
+            }
+
+            .animationHambMidInvWait{
+                animation: hambMidInvWait 2s forwards;
+            }
+
+            .animationHambDownInvWait{
+                animation: hambDownInvWait 1.5s forwards;
+            }
+
+            @keyframes hambUpInvWait {
+                0%   {background-color:#C31515;transform:rotate(45deg);top:15px}
+                100% {background-color:black;top:0vh}
+                
+            }
+
+            @keyframes hambMidInvWait {
+                0%   {background-color:#C31515;transform:rotate(-45deg)}
+                100% {background-color:black}
+            }
+
+            @keyframes hambDownInvWait {
+                0%   {opacity : 0}
+                100% {opacity : 1}
+            }
 
 #footerBlockIn{
     position:absolute;
@@ -242,21 +273,6 @@
     animation: fadeIn 2s forwards;
 }
 
-#logoBlockWait{
-    z-index:1;
-    flex:1;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 2s forwards;
-}
-#logo{
-    min-height:50px;
-    z-index:1;
-    height:8vh;
-    width:auto;
-}
-
 #yellowBack{
     position:absolute;
     height:100%;
@@ -267,6 +283,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    font-size:25px;
 }
 
 
@@ -276,7 +293,6 @@
 }
 
 #holdTxt{
-    font-size:8vw;
     margin:0;
     font-family: 'Sansita Swashed',cursive;
     color:black;
@@ -302,7 +318,6 @@
 }
 
 #newsletter{
-    font-size:8vw;
     margin:0;
     font-family: 'Sansita Swashed',cursive;
     color:black;
@@ -320,9 +335,9 @@
         width:60vw;
         font-family: 'Sansita Swashed',cursive;
         color:black;
-        border-radius:3vw;
+        border-radius:12px;
         padding-left:2vw;
-        border: 1vw solid #000000;
+        border: 2.5px solid #000000;
         box-sizing: border-box;
         box-shadow: -0.8vw 1.2vw 0.8vw rgba(0, 0, 0, 0.4);
         opacity:0;
@@ -335,24 +350,25 @@
     }
 
     #errorWaitTxt{
-        font-size:4vw;
         font-weight: 700;
         text-align:center;
         height:3.5vh;
         width:60vw;
         font-family: 'Sansita Swashed',cursive;
         color:#C31515;
+        font-size:20px;
     }
 
     #titleMenuTxtWait{
         color:white;
         margin:0;
         opacity:0;
-        font-size:10vw;
+        font-size:40px;
         font-family: 'Sansita Swashed',cursive;
         font-weight: 700;
-        padding-bottom:5vh; 
-        padding-right:5vw;
+        padding-bottom:50px; 
+        padding-right:10px;
+        padding-top:15px;
     }
 
     .animNewsletterBlock{
@@ -400,4 +416,53 @@
         text-align:center;
         font-weight: 700;
         animation: fadeIn 2s both;
+    }
+
+    @media (min-width:426px) {
+        .headerBlock{
+            margin-top:30px;
+        }
+
+        .logo{
+            height: 100px;
+        }
+
+        #hambWait{
+            height:60px;
+            width:80px;
+        }
+
+            #hambUpWait{
+                height:12px;
+                width:80px;
+               }
+
+            #hambMidWait{
+                height:12px;
+                width:80px;
+            }
+
+            #hambDownWait{  
+                height:12px;
+                width:80px;
+            }
+            
+        #yellowBack{
+            font-size:40px;
+        }
+
+            #errorWaitTxt{
+                font-size:30px;
+            }
+
+            #titleMenuTxtWait{
+                font-size:80px;
+                }
+
+                @keyframes hambUpWait {
+                    0%   {background-color:black;top:0vh}
+                    100% {background-color:#C31515;transform:rotate(45deg);top:27px}
+                }
+
+    
     }

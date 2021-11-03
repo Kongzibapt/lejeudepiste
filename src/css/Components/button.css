@@ -1,0 +1,74 @@
+.buttonBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 50px;
+}
+
+    .buttonBoxGreen{
+        background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
+        border:2.5px solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:50px;
+        min-width:100px;
+        border-radius:25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10px 20px 12px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    .buttonBoxGreen:active{
+        background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
+    }
+
+    .buttonBoxRed{
+        background:linear-gradient(180deg, #C41515 0%, #2D0E0E 100%);
+        border:2.5px solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:50px;
+        min-width:100px;
+        border-radius:25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10px 20px 12px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    .buttonBoxRed:active{
+        background:linear-gradient(180deg, #2D0E0E 0%, #C41515 100%);
+    }
+
+        .buttonTxt{
+            margin:0;
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+            color:white;
+            font-size:18px;
+            font-family: 'Sansita Swashed',cursive;
+            font-weight: 700;
+        }
+
+@media (min-width:600px) {
+    /* .buttonTxt{
+        font-size:25px;
+    }
+
+    .buttonBoxGreen{
+        height:70px;
+        min-width:120px;
+        border-radius:35px;
+    }
+
+    .buttonBoxRed{
+        height:70px;
+        min-width:120px;
+        border-radius:35px;
+    } */
+}

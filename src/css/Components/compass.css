@@ -1,31 +1,83 @@
-    #roundBack{
-        height:80%;
-        width:80%;
+    .compass{
+        z-index:1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height : 100%;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        flex-direction:column;
+    }
+
+    .compassTitle{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:10px;
+        margin-bottom:40px;
+    }
+
+        .compassTitleTxt{
+            font-size:22px;
+            color:white;
+            margin:0;
+            font-family: 'Sansita Swashed',cursive;
+            text-align:center;
+            font-weight: 400;
+        }
+    
+    .roundBack{
+        height:180px;
+        width:180px;
         z-index:1;
         border-radius:100vw;
         display:flex;
         justify-content: center;
         align-items: center;
         animation: fadeIn 1s both;
+        flex-direction: column;
+        position:relative;
     }
 
-        #logoCompass{
-            height:100%;
+        .logoCompass{
+            height:180px;
             width:auto;
             
         }
 
-        #aiguille{
+        .aiguille{
             position:absolute;
-            height:45%;
+            height:110px;
             width:auto;
-            margin-top:15%
+            top:45px;
         }
 
-    #coord{
+    .coord{
         z-index:1;
         color:white;
         font-size:3vw;
         font-family: 'Sansita Swashed',cursive;
         font-weight: 700;
     }
+
+@media (min-height:800px) {
+
+    .roundBack{
+        height:220px;
+        width:220px;
+    }
+
+        .aiguille{
+            height:130px;
+            margin-top:25px;
+        }
+
+}
+
+@media (min-width:600px) {
+
+    
+        
+}

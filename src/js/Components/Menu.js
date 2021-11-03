@@ -15,6 +15,21 @@ import "../../css/Components/menu.css"
 
 
     render() {
+        const items = [];
+        const srcs = [];
+        for (let i = 0; i < this.props.items.length;i++){
+            srcs.push("img/"+this.props.items[i]+".png");
+            items.push(
+                <div className="itemBlock">
+                    <div className="itemTxtBlock">
+                        <p className="itemTxt">{this.props.items[i]}</p>
+                    </div>
+                    <div className="itemImgBlock">
+                        <img className="itemImg" src={srcs[i]} alt="sécurité"/>
+                    </div>
+                </div>
+            )
+        }
       return (
         <div id="menu">
             <div id="titleMenuBlock">
@@ -25,34 +40,9 @@ import "../../css/Components/menu.css"
                 </div>
             </div>
             <div id="itemsBlock">
-                <div className="itemBlock">
-                    <div className="itemTxtBlock">
-                        <p className="itemTxt">Sécurité</p>
-                    </div>
-                    <div className="itemImgBlock">
-                            <img className="itemImg" src="img\Security.png" alt="sécurité"/>
-                    </div>
-                </div>
-                <div className="itemBlock">
-                    <div className="itemTxtBlock">
-                        <p className="itemTxt">Statistiques</p>
-                    </div>
-                    <div className="itemImgBlock">
-                            <img className="itemImg" src="img\Statistics.png" alt="stats"/>
-                    </div>
-                </div>
-                <div className="itemBlock">
-                    <div className="itemTxtBlock">
-                        <p className="itemTxt">Paramètres</p>
-                    </div>
-                    <div className="itemImgBlock">
-                            <img className="itemImg" src="img\Settings.png" alt="params"/>
-                    </div>
-                </div>
+                {items}
             </div>
-            <div id="contactBlock">
-                <p id="contactTxt">Contact</p>
-            </div>
+            {this.props.quit_button &&
             <div id="leaveBlock">
                 <Link id="link" to="/">
                     <div id="redButton">
@@ -60,6 +50,7 @@ import "../../css/Components/menu.css"
                     </div>
                 </Link>
             </div>
+            }   
         </div>
       )
     }

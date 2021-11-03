@@ -36,8 +36,6 @@
     flex:2;
     width:0vw;
     display:flex;
-    justify-content: center;
-    align-items: flex-end;
     padding-bottom:15%;
     z-index:-1;
     width:0;
@@ -56,15 +54,15 @@
         flex:4;
         display:flex;
         justify-content: flex-end;
-        align-items: center;
     }
 
         #titleMenuTxt{
             
             color:white;
             margin:0;
+            margin-top:25px;
             opacity:0;
-            font-size:10vw;
+            font-size:35px;
             font-family: 'Sansita Swashed',cursive;
             font-weight: 700;
             padding-bottom:1vh; 
@@ -117,7 +115,7 @@
 
     .itemBlock{
         margin:0;
-        height:18%;
+        height:75px;
         position:relative;
         right:-80vw;
         width:100vw;
@@ -138,6 +136,14 @@
             animation: item 1s 2.1s both   ;
         }
 
+        #animItem3{
+            animation: item 1s 2.4s both   ;
+        }
+
+        #animItem4{
+            animation: item 1s 2.7s both   ;
+        }
+
         @keyframes item {
             0%   {right:-80vw}
             100% {right:0vw;}
@@ -148,10 +154,18 @@
         }
 
         #animItemInv1{
-            animation: itemInv 1s 0.2s both   ;
+            animation: itemInv 1s 0.1s both   ;
         }
 
         #animItemInv2{
+            animation: itemInv 1s 0.2s both   ;
+        }
+
+        #animItemInv3{
+            animation: itemInv 1s 0.3s both   ;
+        }
+
+        #animItemInv4{
             animation: itemInv 1s 0.4s both   ;
         }
 
@@ -168,8 +182,9 @@
         }
 
             .itemTxt{
+                margin:0;
                 color:white;
-                font-size:8vw;
+                font-size:25px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 400;
                 padding-bottom:1vh; 
@@ -184,7 +199,7 @@
         }
 
             .itemImg{
-                height:3vh;
+                height:25px;
                 width:auto;
             }
 
@@ -207,7 +222,7 @@
     #contactTxt{
         margin:0;
         color:white;
-        font-size:8vw;
+        font-size:25px;
         font-family: 'Sansita Swashed',cursive;
         font-weight: 700;
         padding-bottom:1vh; 
@@ -276,3 +291,26 @@
             #link{
                 text-decoration:none;
             }
+
+@media (min-width:426px) {
+    #titleMenuTxt{
+        margin-top:40px;
+        font-size:45px;
+    }
+
+    .itemTxt{
+        font-size:35px;
+    }
+
+    .itemImg{
+        height:30px;
+    }
+
+    .itemBlock{
+        height:100px;
+    }
+
+    #contactTxt{
+        font-size:35px;
+    }
+}

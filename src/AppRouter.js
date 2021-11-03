@@ -7,6 +7,7 @@ import Tuto from './js/Views/Tuto';
 import Waiting from './js/Views/Waiting';
 import KiosqueEnigma from './js/Views/KiosqueEnigma';
 import Direction from './js/Views/Direction';
+import Test from './js/Views/Test';
 
  class AppRouter extends React.Component {
     render() {
@@ -20,6 +21,7 @@ import Direction from './js/Views/Direction';
                 <Route exact path="/tuto" component={Tuto}/>
                 <Route exact path="/kiosqueenigma" component={KiosqueEnigma}/>
                 <Route exact path="/direction" component={Direction}/>
+                <Route exact path="/test" component={Test}/>
             </Switch>
         </>
       )

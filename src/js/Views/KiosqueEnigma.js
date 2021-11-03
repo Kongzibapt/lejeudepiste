@@ -3,10 +3,7 @@ import "../../css/Views/kiosqueenigma.css"
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import Saleugos from '../Components/Saleugos';
-import Time from '../Components/Time';
 import Compass from '../Components/Compass';
-import Inventory from '../Components/Inventory';
-import Bonus from '../Components/Bonus';
 import { Link } from 'react-router-dom';
 
  class KiosqueEnigma extends React.Component {
@@ -98,9 +95,6 @@ import { Link } from 'react-router-dom';
       return (
         <div id="kiosqueenigma">
           <Header/>
-            <Inventory/>
-            <Time launchTime={this.state.launchTime}/>
-            <Bonus/>
             <div id="kiosqueEnigmaBlock">
               {this.state.onEnigma ?
               <>

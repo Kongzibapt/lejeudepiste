@@ -14,7 +14,7 @@ import "../../css/Components/compass.css"
         }
     }
 
-    componentDidMount(){
+    componentDclassNameMount(){
       navigator.geolocation.watchPosition((position)=>{
         this.setState({oldDirection:this.state.direction})
         if (position.coords.heading == null){
@@ -35,16 +35,21 @@ import "../../css/Components/compass.css"
 
     render() {
       return (
-          <div id="roundBack">
-            <img style={{transform:"rotate("+this.state.orientation + "deg)"}} id="aiguille" src='img\Aiguille.png' alt="aiguille"/>
-            <img id="logoCompass" src='img\Boussole.png' alt="logo"/>
+        <div className="compass">
+          <div className="compassTitle">
+              <p className="compassTitleTxt">Boussole</p>
           </div>
-          /* <div id="coord">
+          <div className="roundBack">
+            <img style={{transform:"rotate("+this.state.orientation + "deg)"}} className="aiguille" src='img\Aiguille.png' alt="aiguille"/>
+            <img className="logoCompass" src='img\Boussole.png' alt="logo"/>
+          </div>
+          {/*  <div className="coord">
               {this.state.lat} & {this.state.long} & {this.state.direction}
           </div>
-          <div id="coord">
+          <div className="coord">
             {this.state.orientation}
-          </div> */
+          </div>  */}
+        </div>
       )
     }
   }

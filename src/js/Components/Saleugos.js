@@ -7,7 +7,7 @@ class Saleugos extends React.Component {
         super(props)
         this.state={
             txt:this.props.txt,
-            notif:this.props.notif,
+            notif:true,
             index:0,
             open:false
         }
@@ -37,7 +37,7 @@ class Saleugos extends React.Component {
         },100)
         setTimeout(() => {
             saleugosBulle.id = "saleugosBulleClosed" 
-            this.props.changeNotif(false)
+            this.setState({notif:false});
             console.log("notif false");
         },2000)
         
@@ -52,7 +52,7 @@ class Saleugos extends React.Component {
             this.setState({index:this.state.index+1})
         } else if (this.state.index === 0 ){
             this.setState({index:this.state.index+1},()=>{
-                this.props.compass()
+                // this.props.compass()
             })
         } 
     }

@@ -5,7 +5,7 @@ import "../../css/Components/footer.css"
     render() {
       return (
             <div id="footer">
-                <div id="footerBlock">
+                <div id={this.props.dark_theme ? "footerBlackBlock" : "footerLightBlock"}>
                     <p className="footerTxt">Tous droits réservés</p>
                     <p className="footerTxt">Baptiste MARTY & David ANDREAN</p>
                     <p className="footerTxt">Copyright @</p>

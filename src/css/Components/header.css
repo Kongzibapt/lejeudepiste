@@ -17,8 +17,7 @@
     }
 
 #headerBlock{
-    margin-top:max(1%,10px);
-    height:30%;
+    margin-top:20px;
     display:flex;
 }
 
@@ -31,7 +30,7 @@
 
     #logo{
         z-index:1;
-        height:8%;
+        height: 60px;
         width:auto;
     }
 
@@ -42,12 +41,22 @@
     align-items: center;
 }
 
-    #titleTxt{
-        font-size:min(8vw,4.2vh);
+    #lightTitleTxt{
+        font-size:25px;
         font-family: 'Sansita Swashed',cursive;
         color:white;
         text-align:center;
         font-weight: 700;
+        margin:0;
+    }
+
+    #darkTitleTxt{
+        font-size:25px;
+        font-family: 'Sansita Swashed',cursive;
+        color:black;
+        text-align:center;
+        font-weight: 700;
+        margin:0;
     }
 
 #hambBlock{
@@ -58,8 +67,8 @@
 }
 
     #hamb{
-        height:35%;
-        width:13vw;
+        height:30px;
+        width:40px;
         display:flex;
         justify-content: space-between;
         align-items: center;
@@ -67,52 +76,89 @@
         z-index:2;
     }
 
-        #hambUp{
+        #lightHambUp{
             position:relative;
-            height:0.7vh;
-            width:13vw;
+            height:6px;
+            width:40px;
             background-color: white;
             border-radius:1vw;
         }
+        #darkHambUp{
+            position:relative;
+            height:6px;
+            width:40px;
+            background-color: black;
+            border-radius:1vw;
+        }
 
-        #hambMid{
+        #lightHambMid{
             position:relative;
             top:0.2vh;
-            height:0.7vh;
-            width:13vw;
+            height:6px;
+            width:40px;
             background-color: white;
             border-radius:1vw;
         }
+        #darkHambMid{
+            position:relative;
+            top:0.2vh;
+            height:6px;
+            width:40px;
+            background-color: black;
+            border-radius:1vw;
+        }
 
-        #hambDown{
+        #lightHambDown{
             position:relative;
             top:0.4vh;
-            height:0.7vh;
-            width:13vw;
+            height:6px;
+            width:40px;
             background-color: white;
             border-radius:1vw;
-        }   
+        }  
+        #darkHambDown{
+            position:relative;
+            top:0.4vh;
+            height:6px;
+            width:40px;
+            background-color: black;
+            border-radius:1vw;
+        }    
 
-            .animationHambUp{
-                animation: hambUp 2s forwards;
+            .animationLightHambUp{
+                animation: lightHambUp 2s forwards;
+            }
+            .animationDarkHambUp{
+                animation: darkHambUp 2s forwards;
             }
 
-            .animationHambMid{
-                animation: hambMid 2s forwards;
+            .animationLightHambMid{
+                animation: lightHambMid 2s forwards;
+            }
+            .animationDarkHambMid{
+                animation: darkHambMid 2s forwards;
             }
 
             .animationHambDown{
                 animation: hambDown 1.5s forwards;
             }
 
-            @keyframes hambUp {
-                0%   {background-color:white;top:0vh}
-                100% {background-color:#C31515;transform:rotate(45deg);top:2vh}
+            @keyframes lightHambUp {
+                0%   {background-color:white;top:0px}
+                100% {background-color:#C31515;transform:rotate(45deg);top:14px}
+            }
+            @keyframes darkHambUp {
+                0%   {background-color:black;top:0px}
+                100% {background-color:#C31515;transform:rotate(45deg);top:14px}
             }
 
-            @keyframes hambMid {
+            @keyframes lightHambMid {
                 0%   {background-color:white}
-                100% {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
+                100% {background-color:#C31515;transform:rotate(-45deg)}
+            }
+            @keyframes darkHambMid {
+                0%   {background-color:black}
+                100% {background-color:#C31515;transform:rotate(-45deg)}
             }
 
             @keyframes hambDown {
@@ -120,30 +166,110 @@
                 100% {opacity : 0}
             }
 
-            .animationHambUpInv{
-                animation: hambUpInv 2s forwards;
+            .animationLightHambUpInv{
+                animation: lightHambUpInv 2s forwards;
+            }
+            .animationDarkHambUpInv{
+                animation: darkHambUpInv 2s forwards;
             }
 
-            .animationHambMidInv{
-                animation: hambMidInv 2s forwards;
+            .animationLightHambMidInv{
+                animation: lightHambMidInv 2s forwards;
+            }
+            .animationDarkHambMidInv{
+                animation: darkHambMidInv 2s forwards;
             }
 
             .animationHambDownInv{
                 animation: hambDownInv 1.5s forwards;
             }
 
-            @keyframes hambUpInv {
-                0%   {background-color:#C31515;transform:rotate(45deg);top:2vh}
+            @keyframes lightHambUpInv {
+                0%   {background-color:#C31515;transform:rotate(45deg);top:14px}
                 100% {background-color:white;top:0vh}
-                
+            }
+            @keyframes darkHambUpInv {
+                0%   {background-color:#C31515;transform:rotate(45deg);top:14px}
+                100% {background-color:black;top:0vh}
             }
 
-            @keyframes hambMidInv {
+            @keyframes lightHambMidInv {
                 0%   {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
                 100% {background-color:white}
+            }
+            @keyframes darkHambMidInv {
+                0%   {background-color:#C31515;transform:rotate(-45deg);bottom:1vh}
+                100% {background-color:black}
             }
 
             @keyframes hambDownInv {
                 0%   {opacity : 0}
                 100% {opacity : 1}
             }
+
+@media (min-width:600px) {
+    #headerBlock{
+        margin-top:30px;
+    }
+
+    #logo{
+        height: 80px;
+    }
+
+    #hamb{
+        height:45px;
+        width:60px;
+    }
+
+        #lightHambUp{
+            height:8px;
+            width:60px;
+        }
+        #darkHambUp{
+            height:8px;
+            width:60px;
+        }
+
+        #lightHambMid{
+            height:8px;
+            width:60px;
+        }
+        #darkHambMid{
+            height:12px;
+            width:60px;
+        }
+
+        #lightHambDown{  
+            height:8px;
+            width:60px;
+        }
+        #darkHambDown{  
+            height:8px;
+            width:60px;
+        }
+
+        #lightTitleTxt{
+            font-size:40px;
+        }
+    
+        #darkTitleTxt{
+            font-size:40px;
+        }
+
+        @keyframes lightHambUp {
+            0%   {background-color:white;top:0px}
+            100% {background-color:#C31515;transform:rotate(45deg);top:20px}
+        }
+        @keyframes darkHambUp {
+            0%   {background-color:black;top:0px}
+            100% {background-color:#C31515;transform:rotate(45deg);top:20px}
+        }
+        @keyframes lightHambUpInv {
+            0%   {background-color:#C31515;transform:rotate(45deg);top:20px}
+            100% {background-color:white;top:0vh}
+        }
+        @keyframes darkHambUpInv {
+            0%   {background-color:#C31515;transform:rotate(45deg);top:20px}
+            100% {background-color:black;top:0vh}
+        }
+}

@@ -1,22 +1,56 @@
-#bonus{
-    height:5%;
-    width:50%;
-    position:absolute;
-    top:16%;
-    left:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.parchemin{
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 360px;
+    width:320px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-    #bonusBlock{
-        width:5vh;
-        height:5vh;
-        background: linear-gradient(180deg, #323232 0%, #000000 100%);
-        border:0.6vw solid #ffffff;
-        box-shadow: -0.5vw 0.5vw 1.5vw rgba(255, 255, 255, 0.75);
-        border-radius:8vw;
-        display:flex;
-        justify-content:center;
-        align-items:center;
+    .parcheminBlock{
+        height:90%;
+        width:90%;
+        background: rgba(0,0,0,0.75);
     }
+
+    .parcheminTitle{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:10px;
+    }
+
+        .parcheminTxt{
+            font-size:22px;
+            color:white;
+            margin:0;
+            font-family: 'Sansita Swashed',cursive;
+            text-align:center;
+            font-weight: 400;
+        }
+
+
+@media (min-height:800px) {
+
+    .parchemin{
+        height:420px;
+    }
+    
+        
+    
+    }
+    
+    @media (min-width:600px) {
+    
+        .parchemin{
+            width:400px;
+        }
+        
+            .parcheminTxt{
+                font-size:25px;
+            }
+            
+        }

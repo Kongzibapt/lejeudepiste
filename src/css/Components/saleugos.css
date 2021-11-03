@@ -4,13 +4,9 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    position:absolute;
-    bottom:13%;
-    height:8.6%;
 }  
     
     #saleugosBlock{
-        width:90%;
         height:100%;
         display:flex;
         justify-content:center;
@@ -20,12 +16,12 @@
     }
 
         #saleugosCircle{
-            height:7vh;
-            width:7vh;
+            height:45px;
+            width:45px;
             background: linear-gradient(180deg, #091688 0%, #000000 100%);
-            border: 0.6vw solid #FFFFFF;
+            border: 2px solid #FFFFFF;
             box-sizing: border-box;
-            box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
+            box-shadow: -2px 2px 6px rgba(255, 255, 255, 0.75);
             border-radius: 100vw;
         }
         
@@ -112,14 +108,14 @@
                     padding: 2% 7% 4% 3%;
                     text-align: left;
                     color:white;
-                    font-size:4vw;
+                    font-size:16px;
                     font-family: 'Sansita Swashed',cursive;
                     font-weight: 400;
                     animation : fadeIn 0.5s both;
                 }
 
             #saleugosTapBlock{
-                width:10%;
+                width:8%;
                 height:85%;
                 display:flex;
                 justify-content:center;

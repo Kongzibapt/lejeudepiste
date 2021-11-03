@@ -100,47 +100,46 @@ import "../../css/Views/waiting.css"
 
     render() {
       return (
-        <div id="waiting">
+        <div className="waiting">
             {this.state.inKey && 
             <>
-            <div id="headerWait">
-                <div id="menu">
-                    <div id="titleMenuBlock">
-                        <div id="titleMenuTxtBlock">
-                            <p id="titleMenuTxtWait">Menu</p>
-                        </div>
-                        <div id="crossBlock">
-                        </div>
-                    </div>
-                    <div id="itemsBlock">
-                        <div className="itemBlock">
-                            <div className="itemTxtBlock">
-                                <p className="itemTxt">Contact</p>
-                            </div>
-                            <div className="itemImgBlock">
-                                    <img className="itemImg" src="img\Contact.png" alt="sécurité"/>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div className="headerWait">
+              <div id="menu">
+                <div id="titleMenuBlock">
+                  <div id="titleMenuTxtBlock">
+                    <p id="titleMenuTxtWait">Menu</p>
+                  </div>
+                    <div id="crossBlock">
+                  </div>
                 </div>
-                    <div id="headerBlock">
-                        <div id="logoBlockWait">
-                        <img id="logo" src='img\Logo.png' alt="logo"/>
-                        </div>
-                        <div id="titleBlockWait">
-                        <p id="titleTxt">L'Ingrédient Secret</p>
-                        </div>
-                        <div id="hambBlock">
-                        <div id="hambWait" onClick={this.handleMenu}>
-                            <div id="hambUpWait"></div>
-                            <div id="hambMidWait"></div>
-                            <div id="hambDownWait"></div>
-                        </div>
-                        </div>
+                <div id="itemsBlock">
+                  <div className="itemBlock">
+                    <div className="itemTxtBlock">
+                      <p className="itemTxt">Contact</p>
+                    </div>
+                    <div className="itemImgBlock">
+                      <img className="itemImg" src="img\Contact.png" alt="sécurité"/>
+                    </div>
                     </div>
                 </div>
-                <div id="footerBlockIn">
+              </div>
+              <div className="headerBlock">
+                <div className="logoBlockWait">
+                  <img className="logo" src='img\Logo.png' alt="logo"/>
+                </div>
+                <div className="titleBlockWait">
+                  <p className="titleTxt">L'Ingrédient Secret</p>
+                </div>
+                <div className="hambBlock">
+                  <div id="hambWait" onClick={this.handleMenu}>
+                    <div id="hambUpWait"></div>
+                      <div id="hambMidWait"></div>
+                    <div id="hambDownWait"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="footerBlockIn">
                 <div id="footerBlockWaitIn">
                         <p className="footerTxtWaitIn">Tous droits réservés</p>
                         <p className="footerTxtWaitIn">Baptiste MARTY & David ANDREAN</p>
@@ -152,8 +151,8 @@ import "../../css/Views/waiting.css"
                 <p id="titleWaitingUp">Les Cités</p>
                 <p id="titleWaitingDown">des Secrets</p>
             </div>
-            <div id="keyBlock">
-                <img id="key" src='img\Key.svg' alt="clé"/>
+            <div className="keyBlock">
+                <img className="key" src='img\Key.svg' alt="clé"/>
             </div>
             {!this.state.inKey && 
             <div id="footerBlockBigWait">

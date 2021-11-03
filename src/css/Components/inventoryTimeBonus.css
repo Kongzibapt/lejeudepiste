@@ -1,0 +1,127 @@
+.inventoryTimeBonus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    z-index:1;
+    flex-direction: column;
+}
+
+.inventoryTimeBonusBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:260px;
+}
+
+.inventory{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    .inventoryBlock{
+        width:45px;
+        height:45px;
+        background: linear-gradient(180deg, #323232 0%, #000000 100%);
+        border:2px solid #ffffff;
+        box-shadow: -2px 2px 6px rgba(255, 255, 255, 0.75);
+        border-radius:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        .inventoryImg{
+            width:60%;
+            height:auto;
+            padding-bottom:4px;
+        }
+
+    .time{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .timeBlock{
+        width:120px;
+        height:45px;
+        background:linear-gradient(180deg, #C41515 0%, #2D0E0E 100%);
+        border:2px solid #ffffff;
+        box-shadow: -2px 2px 6px rgba(255, 255, 255, 0.75);
+        border-radius:28px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        .hourglassBlock{
+            width:35%;
+            height:100%;
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            
+        }
+
+            .hourglassImg{
+                height:50%;
+                width:auto;
+            }
+
+        .timeTxtBlock{
+            width:70%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+            .timeTxt{
+                margin:0;
+                color:white;
+                font-size:18px;
+                width:60px;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+                padding-bottom:4px;
+                position:absolute;
+            }
+            .timeTxtBonus{
+                margin:0;
+                color:white;
+                font-size:18px;
+                width:60px;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 400;
+                padding-bottom:4px;
+                position:absolute;
+            }
+
+.bonus{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    .bonusBlock{
+        width:45px;
+        height:45px;
+        background: linear-gradient(180deg, #323232 0%, #000000 100%);
+        border:2px solid #ffffff;
+        box-shadow: -2px 2px 6px rgba(255, 255, 255, 0.75);
+        border-radius:30px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+        .bonusImg{
+            width:95%;
+            height:auto;
+            padding-top:3px;
+            padding-left:2px;
+        }
+
+
