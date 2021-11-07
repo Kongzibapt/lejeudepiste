@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LeJeudePiste.github.io/static/css/main.7df0c847.chunk.css",
+    "main.css": "/LeJeudePiste.github.io/static/css/main.a55435f0.chunk.css",
     "main.js": "/LeJeudePiste.github.io/static/js/main.3fcf7ead.chunk.js",
     "main.js.map": "/LeJeudePiste.github.io/static/js/main.3fcf7ead.chunk.js.map",
     "runtime-main.js": "/LeJeudePiste.github.io/static/js/runtime-main.dbd57cda.js",
@@ -8,16 +8,15 @@
     "static/js/2.5e7180ae.chunk.js": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js",
     "static/js/2.5e7180ae.chunk.js.map": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js.map",
     "index.html": "/LeJeudePiste.github.io/index.html",
-    "static/css/main.7df0c847.chunk.css.map": "/LeJeudePiste.github.io/static/css/main.7df0c847.chunk.css.map",
+    "static/css/main.a55435f0.chunk.css.map": "/LeJeudePiste.github.io/static/css/main.a55435f0.chunk.css.map",
     "static/js/2.5e7180ae.chunk.js.LICENSE.txt": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js.LICENSE.txt",
-    "static/media/direction.css": "/LeJeudePiste.github.io/static/media/Fond.d52601a4.png",
-    "static/media/home.css": "/LeJeudePiste.github.io/static/media/Fond2.d52601a4.png",
+    "static/media/direction.css": "/LeJeudePiste.github.io/static/media/Fond.e9a176f4.png",
     "static/media/kiosqueenigma.css": "/LeJeudePiste.github.io/static/media/Parchemin.7d4f4ec2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dbd57cda.js",
     "static/js/2.5e7180ae.chunk.js",
-    "static/css/main.7df0c847.chunk.css",
+    "static/css/main.a55435f0.chunk.css",
     "static/js/main.3fcf7ead.chunk.js"
   ]
 }
