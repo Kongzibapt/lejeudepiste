@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/LeJeudePiste.github.io/static/css/main.e2cc6595.chunk.css",
-    "main.js": "/LeJeudePiste.github.io/static/js/main.2423a6dc.chunk.js",
-    "main.js.map": "/LeJeudePiste.github.io/static/js/main.2423a6dc.chunk.js.map",
+    "main.js": "/LeJeudePiste.github.io/static/js/main.4779b6f2.chunk.js",
+    "main.js.map": "/LeJeudePiste.github.io/static/js/main.4779b6f2.chunk.js.map",
     "runtime-main.js": "/LeJeudePiste.github.io/static/js/runtime-main.dbd57cda.js",
     "runtime-main.js.map": "/LeJeudePiste.github.io/static/js/runtime-main.dbd57cda.js.map",
     "static/js/2.5e7180ae.chunk.js": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.dbd57cda.js",
     "static/js/2.5e7180ae.chunk.js",
     "static/css/main.e2cc6595.chunk.css",
-    "static/js/main.2423a6dc.chunk.js"
+    "static/js/main.4779b6f2.chunk.js"
   ]
 }
