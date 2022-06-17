@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/LeJeudePiste.github.io/static/css/main.e2cc6595.chunk.css",
-    "main.js": "/LeJeudePiste.github.io/static/js/main.4779b6f2.chunk.js",
-    "main.js.map": "/LeJeudePiste.github.io/static/js/main.4779b6f2.chunk.js.map",
-    "runtime-main.js": "/LeJeudePiste.github.io/static/js/runtime-main.dbd57cda.js",
-    "runtime-main.js.map": "/LeJeudePiste.github.io/static/js/runtime-main.dbd57cda.js.map",
-    "static/js/2.5e7180ae.chunk.js": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js",
-    "static/js/2.5e7180ae.chunk.js.map": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js.map",
-    "index.html": "/LeJeudePiste.github.io/index.html",
-    "static/css/main.e2cc6595.chunk.css.map": "/LeJeudePiste.github.io/static/css/main.e2cc6595.chunk.css.map",
-    "static/js/2.5e7180ae.chunk.js.LICENSE.txt": "/LeJeudePiste.github.io/static/js/2.5e7180ae.chunk.js.LICENSE.txt",
-    "static/media/direction.css": "/LeJeudePiste.github.io/static/media/Fond.e9a176f4.png",
-    "static/media/kiosqueenigma.css": "/LeJeudePiste.github.io/static/media/Parchemin.7d4f4ec2.png"
+    "main.css": "/static/css/main.ce65b8e4.chunk.css",
+    "main.js": "/static/js/main.a38ed109.chunk.js",
+    "main.js.map": "/static/js/main.a38ed109.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2bc83920.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2bc83920.js.map",
+    "static/js/2.b1936504.chunk.js": "/static/js/2.b1936504.chunk.js",
+    "static/js/2.b1936504.chunk.js.map": "/static/js/2.b1936504.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ce65b8e4.chunk.css.map": "/static/css/main.ce65b8e4.chunk.css.map",
+    "static/js/2.b1936504.chunk.js.LICENSE.txt": "/static/js/2.b1936504.chunk.js.LICENSE.txt",
+    "static/media/amans.css": "/static/media/Amans.951b9ed8.jpg",
+    "static/media/vestiges.css": "/static/media/Armagnac_back.b05a5d46.png",
+    "static/media/fabie.css": "/static/media/Fabie_back.74bab6fc.png",
+    "static/media/direction.css": "/static/media/Fond.e9a176f4.png",
+    "static/media/wrongDevice.css": "/static/media/Fond_Desktop.e0bb053b.png",
+    "static/media/tuto.css": "/static/media/KioGau.ba5ad206.png",
+    "static/media/mazel.css": "/static/media/Mazel_back.4a7b46fb.png",
+    "static/media/museum.css": "/static/media/Museum.8b95367e.png",
+    "static/media/kiosqueenigma.css": "/static/media/Parchemin.5127ae1e.png",
+    "static/media/pierre.css": "/static/media/Pierre.f8dc7f6c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dbd57cda.js",
-    "static/js/2.5e7180ae.chunk.js",
-    "static/css/main.e2cc6595.chunk.css",
-    "static/js/main.4779b6f2.chunk.js"
+    "static/js/runtime-main.2bc83920.js",
+    "static/js/2.b1936504.chunk.js",
+    "static/css/main.ce65b8e4.chunk.css",
+    "static/js/main.a38ed109.chunk.js"
   ]
 }
