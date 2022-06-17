@@ -1,0 +1,40 @@
+.mazel{
+    flex:1;
+    background-image: url(../../img/Mazel_back.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.mazelGamePart{
+    position:relative
+}
+
+.mazelImg{
+    animation: fadeIn 1s both;
+    border-radius: 10px;
+}
+
+.statue{
+    position:absolute;
+    top:75px;
+    left:75px;
+    z-index:1;
+}
+
+.keyMazel{
+    position:absolute;
+    top:90px;
+    left:80px;
+}
+
+    .chestMazelImg{
+        width:230px;
+        height:auto;
+    }

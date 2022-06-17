@@ -5,10 +5,10 @@ import "../../css/Components/footer.css"
     render() {
       return (
             <div id="footer">
-                <div id={this.props.dark_theme ? "footerBlackBlock" : "footerLightBlock"}>
+                <div id={this.props.dark_theme ? "footerDarkBlock" : "footerLightBlock"}>
                     <p className="footerTxt">Tous droits réservés</p>
                     <p className="footerTxt">Baptiste MARTY & David ANDREAN</p>
-                    <p className="footerTxt">Copyright @</p>
+                    <p className="footerTxt">Copyright ©</p>
                 </div>
             </div>
       )

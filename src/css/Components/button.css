@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height : 50px;
+    z-index:2;
 }
 
     .buttonBoxGreen{
@@ -43,6 +44,44 @@
         background:linear-gradient(180deg, #2D0E0E 0%, #C41515 100%);
     }
 
+    .buttonBoxBlue{
+        background:linear-gradient(180deg, #091688 0%, #0A0D21 100%);
+        border:2.5px solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:50px;
+        min-width:100px;
+        border-radius:25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10px 20px 12px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    .buttonBoxBlue:active{
+        background:linear-gradient(180deg,  #0A0D21 0%, #091688 100%);
+    }
+
+    .buttonBoxGray{
+        background:linear-gradient(180deg, #8A8A8A 0%, #0A0D21 100%);
+        border:2.5px solid #000000;
+        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
+        height:50px;
+        min-width:100px;
+        border-radius:25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10px 20px 12px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    /* .buttonBoxGray:active{
+        background:linear-gradient(180deg,  #0A0D21 0%, #091688 100%);
+    } */
+
         .buttonTxt{
             margin:0;
             -webkit-user-select: none; /* Safari */        
@@ -56,10 +95,10 @@
         }
 
 @media (min-width:600px) {
-    /* .buttonTxt{
+    .buttonTxt{
         font-size:25px;
     }
-
+    /*
     .buttonBoxGreen{
         height:70px;
         min-width:120px;
@@ -71,4 +110,7 @@
         min-width:120px;
         border-radius:35px;
     } */
+}
+
+@media (min-height:800px) {
 }

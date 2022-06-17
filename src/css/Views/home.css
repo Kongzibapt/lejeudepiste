@@ -1,4 +1,4 @@
-#home{
+.home{
     flex:1;
     background-image: url(../../img/Fond.png);
     height: 100%; 
@@ -8,26 +8,35 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     overflow:hidden;
 }
 
-#transpBlock{
-    height:40%;
+.transpBlock{
+    height:360px;
+    width:320px;
     display:flex;
     justify-content: center;
     align-items: center;
-    z-index:1;
+    z-index:2;
+    position:relative;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
 }
 
-    #transpBox{
-        height:100%;
-        width:85vw;
+    .transpBox{
+        height:90%;
+        width:90%;
         background: rgba(0, 0, 0, 0.75);
-        border-radius: 4vw;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
         #cathé{
-            width:70vw;
+            width:80%;
             height:auto;
         }
 
@@ -39,12 +48,12 @@
 }
 
 #rodez{
-    margin-top:10%;
-    width:40vw;
+    margin-top:40px;
+    width:40%;
     height:auto;
 }
 
-#rodezStroke{
+.rodezStroke{
     stroke-width:20px;
     stroke-dasharray: 260;
     stroke-dashoffset: 0;
@@ -105,3 +114,20 @@
         #link{
             text-decoration:none;
         }
+
+@media (min-height:800px) {
+
+    .transpBlock{
+        height:450px;
+    }
+        
+    
+    }
+    
+@media (min-width:600px) {
+
+    .transpBlock{
+        width:500px;
+    }
+        
+    }

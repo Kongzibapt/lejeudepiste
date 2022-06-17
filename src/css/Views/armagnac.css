@@ -1,0 +1,42 @@
+.armagnac{
+    flex:1;
+    background-image: url(../../img/Armagnac_back.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.listArmagnacPart{
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listArmagnac{
+    height:75%;
+    display:flex;
+    justify-content:center
+}
+
+    .listArmagnacImg{
+
+        width:230px;
+        height:auto
+    }
+
+.launchGame{
+    height:25%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}

@@ -7,7 +7,7 @@ class Saleugos extends React.Component {
         super(props)
         this.state={
             txt:this.props.txt,
-            notif:true,
+            notif:this.props.notif,
             index:0,
             open:false
         }
@@ -46,13 +46,14 @@ class Saleugos extends React.Component {
     changeContent = () => {
         if (this.state.index === this.state.txt.length-1){
             this.setState({index:this.state.index+1},()=>{
-                this.closeBulle()
+                this.closeBulle();
+                this.props.onClickLast && this.props.onClickLast();
             })
         }else if (this.state.index < this.state.txt.length-1 && this.state.index !== 0){
             this.setState({index:this.state.index+1})
         } else if (this.state.index === 0 ){
             this.setState({index:this.state.index+1},()=>{
-                // this.props.compass()
+                this.props.onClickFirst && this.props.onClickFirst()
             })
         } 
     }

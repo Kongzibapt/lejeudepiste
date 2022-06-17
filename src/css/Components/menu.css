@@ -4,7 +4,7 @@
     top:0;
     bottom:0;
     width:0vw;
-    z-index:2;
+    z-index:3;
     height:100%;
     background: linear-gradient(270deg, #030303 71.55%, rgba(3, 3, 3, 0) 99.21%);
     display:flex;
@@ -184,11 +184,11 @@
             .itemTxt{
                 margin:0;
                 color:white;
-                font-size:25px;
+                font-size:23px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 400;
                 padding-bottom:1vh; 
-                padding-right:5vw;
+                padding-right:10px;
             }
 
         .itemImgBlock{
@@ -292,9 +292,9 @@
                 text-decoration:none;
             }
 
-@media (min-width:426px) {
+@media (min-width:600px) {
     #titleMenuTxt{
-        margin-top:40px;
+        margin-top:20px;
         font-size:45px;
     }
 

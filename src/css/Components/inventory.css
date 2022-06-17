@@ -1,5 +1,4 @@
 .backpack{
-    z-index:1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,6 +6,7 @@
     width:320px;
     margin-left:auto;
     margin-right:auto;
+    z-index:2;
 }
 
     .backpackBlock{
@@ -32,40 +32,142 @@
                 font-weight: 400;
             }
 
-        .objects{
+        .objectsInv{
             height:270px;
-            padding:10px 20px 10px 20px;
+            padding:10px 35px 10px 35px;
             display:grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(5,20%);
         }
 
             .objectCase{
                 background-color:white;
-                height:35px;
-                width:35px;
+                height:40px;
+                width:40px;
                 margin:auto;
                 border-radius: 5px;
-                box-shadow: inset -3px -3px 4px rgba(0, 0, 0, 0.5);
+                box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.5);
                 display:flex;
                 justify-content: center;
                 align-items: center;
             }
 
-                .objectImg{
+                .objectImgInv{
                     height:35px;
-                    width:auto;
+                    width:35px;
+                    margin-right:1px;
                 }
+
+    .objectBigInv{
+        display:flex;
+        flex-direction:column;
+        margin-top:20px;
+        position:relative;
+    }
+
+        .objectBigCase{
+            background-color:white;
+            height:150px;
+            width:150px;
+            margin:auto;
+            border-radius: 10px;
+            box-shadow: inset -6px -6px 8px rgba(0, 0, 0, 0.5);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .objectBigImgInv{
+            width:130px;
+            height:130px
+        }
+
+        .objectBigTitle{
+            margin-top:10px;
+            margin-bottom:10px
+        }
+
+        .objectBigTitleTxt{
+            font-size:22px;
+            color:white;
+            margin:0;
+            font-family: 'Sansita Swashed',cursive;
+            text-align:center;
+            font-weight: 400;
+        }
+
+        .crossObjectBig{
+            position:absolute;
+            right:10px;
+            top:-40px
+        }
+
+        .crossObjectBigImg{
+            width:20px;
+            height:20px
+        }
+
+        .buttonsInv{
+            display:flex;
+            justify-content:space-around;
+        }
+
+.objectsCombine{
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+    position:relative;
+    height:268px
+}
+
+.twoObjects{
+    display:flex;
+    justify-content: center;
+    height:65%;
+    margin-top:5%
+}
+
+.oneObject{
+    flex:1;
+}
+
+.objectMiddleCase{
+    background-color:white;
+    height:100px;
+    width:100px;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: inset -6px -6px 8px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objectMiddleImgInv{
+    width:90px;
+    height:90px
+}
+
+.combineButton{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height:30%;
+}
 
 @media (min-height:800px) {
 
 .backpack{
-    height:420px;
+    height:450px;
 }
 
     .objects{
         height:320px;
     }  
+
+    .objectsInv{
+        margin-top:30px
+    }
 
 }
 
@@ -83,5 +185,6 @@
                 height:45px;
                 width:45px;
             }
+            
     
     }

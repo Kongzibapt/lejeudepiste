@@ -15,9 +15,12 @@ class SplittedText extends React.Component {
         var texts = document.getElementsByClassName("splittedTxt");
         var sum = 0;
         for (let i = 0; i <this.props.tabtxt.length; i++) {
-            sum += this.props.tabtxt[i].sec;
-            console.log(texts[i]);
-            texts[i].style.cssText = "animation : fadeTxt "+this.props.tabtxt[i].sec+"s "+sum+"s both" ;
+            if (this.props.tabtxt[i].sec === -1){
+                texts[i].style.cssText = "animation : fadeTxtForAllways 2s "+sum+"s both" ;
+            }else{
+                texts[i].style.cssText = "animation : fadeTxt "+this.props.tabtxt[i].sec+"s "+sum+"s both" ;
+                sum += this.props.tabtxt[i].sec;
+            }
         }
     }
 
@@ -36,7 +39,7 @@ class SplittedText extends React.Component {
         const texts = [];
         for (let i = 0; i <this.props.tabtxt.length; i++) {
            texts.push(
-            <p className="splittedTxt">{this.props.tabtxt[i].txt}</p>
+            <p key={i} className="splittedTxt">{this.props.tabtxt[i].txt}</p>
            )
            
         }

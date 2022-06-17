@@ -1,0 +1,44 @@
+.wrongDevice{
+    flex:1;
+    background-image: url(../../img/Fond_Desktop.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+    .wrongDeviceTransp{
+        height:100%;
+        width:100%;
+        background: rgba(0, 0, 0, 0.75);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .wrongAdvice{
+            width:40%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .wrongAdviceImg{
+                height:100px;
+                width:auto
+            }
+
+            .wrongAdviceTxt{
+                color:white;
+                font-size:40px;
+                font-family: 'Sansita Swashed',cursive;
+                font-weight: 700;
+                text-align:center;
+            }

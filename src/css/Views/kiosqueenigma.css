@@ -1,84 +1,23 @@
-#kiosqueenigma{
-    height:100%;
-    width:100vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-image: url("../../img/Fond.png");
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-size: cover;
-    overflow: hidden;
-}
-
-    #kiosqueEnigmaBlock{
-        height:50%;
-        width:80%;
-        border-radius:5vw;
-        background: rgba(0, 0, 0, 0.75);
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        flex-direction: column;
-    }
-
-        #letsGoBlock{
-            height:13%;
-            width:50%;
-            background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
-            border: 0.7vw solid #FFFFFF;
-            box-sizing: border-box;
-            box-shadow: -0.8vw 0.8vw 1.5vw rgba(255, 255, 255, 0.75);
-            border-radius: 10vw;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
-
-        #letsGoBlock:active{
-            background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
-        }
-
-        .animLetsGo{
-            animation:fadeIn 1s both;
-        }
-
-        .animLetsGoInv{
-            animation : fadeOut 1s both;
-        }
-
-            #letsGoTxt{
-                margin:0;
-                color:white;
-                font-size:5vw;
-                font-family: 'Sansita Swashed',cursive;
-                font-weight: 400;
-                padding-bottom:2%
-            }
 
         #enigmaTitleBlock{
-            width:100%;
-            height:13%;
+            height:50px;
             display:flex;
-            justify-content:center;
-            align-items:center;
+            justify-content: center;
+            align-items: center;
         }
 
             #enigmaTitleTxt{
                 margin:0;
                 color:white;
-                font-size:5.5vw;
+                font-size:22px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 700;
-                padding-bottom:2%;
                 animation : fadeIn 1.5s both;
             }
 
         #enigmaListBlock{
-            height:55%;
-            width:85%;
+            height:180px;
+            width:90%;
             background:url("../../img/Parchemin.png");
             background-repeat:no-repeat;
             background-position-x:center;
@@ -98,7 +37,7 @@
                 margin:0;
                 text-align:center;
                 color:black;
-                font-size:3.5vw;
+                font-size:13px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 700;
                 padding-bottom:2%;
@@ -115,7 +54,7 @@
                 margin:0;
                 text-align:center;
                 color:black;
-                font-size:3.5vw;
+                font-size:13px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 700;
                 padding-bottom:2%;
@@ -133,7 +72,7 @@
                 margin:0;
                 text-align:center;
                 color:black;
-                font-size:3.5vw;
+                font-size:13px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 700;
                 padding-bottom:2%;
@@ -146,7 +85,7 @@
 
             #answerBlock{
                 z-index:1;
-                height:30%;
+                height:80px;
                 width:100%;
                 display:flex;
                 justify-content:center;
@@ -232,6 +171,15 @@
             30% {top:35%;left:33%;height:30%;width:30%;}
             90% {top:15%;left:22%;height:7%;width:7%;opacity:1}
             100% {top:15%;left:22%;height:7%;width:7%;opacity:0}
+        }
+
+        .compassToInventoryContainer{
+            position:relative;
+            height:100%;width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10%;
         }
 
         #choiceTitleBlock{

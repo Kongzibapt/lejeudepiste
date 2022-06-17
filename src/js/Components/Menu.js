@@ -18,9 +18,9 @@ import "../../css/Components/menu.css"
         const items = [];
         const srcs = [];
         for (let i = 0; i < this.props.items.length;i++){
-            srcs.push("img/"+this.props.items[i]+".png");
+            srcs.push("img/MenuItems/"+this.props.items[i]+".png");
             items.push(
-                <div className="itemBlock">
+                <div className="itemBlock" key={i}>
                     <div className="itemTxtBlock">
                         <p className="itemTxt">{this.props.items[i]}</p>
                     </div>

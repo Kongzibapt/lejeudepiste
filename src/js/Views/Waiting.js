@@ -1,7 +1,10 @@
 import axios from 'axios';
 import React from 'react';
-import adress from '../../adress';
+import adress from '../../utils/adress';
 import "../../css/Views/waiting.css"
+import Footer from '../Components/Footer';
+import Header from '../Components/Header';
+import Input from '../Components/Input';
 
  class Waiting extends React.Component {
 
@@ -18,9 +21,12 @@ import "../../css/Views/waiting.css"
     }
 
     componentDidMount(){
-      setTimeout(() =>
-      this.setState({inKey:true}),5500)
+      setTimeout(() => {
+      this.setState({inKey:true});
+    }
+      ,5500);
       
+      this.handleInputAnim();
   }
 
     handleEmailChange = e => {
@@ -28,8 +34,8 @@ import "../../css/Views/waiting.css"
     }
 
     animForm = () => {
-      let newsletter = document.getElementById("newsletterBlock")
-      newsletter.className = "animNewsletterBlock"
+      let inputBlock = document.getElementsByClassName("inputBlock")[0];
+      inputBlock.id = "animNewsletterBlock"
 
     }
 
@@ -44,58 +50,16 @@ import "../../css/Views/waiting.css"
           this.animForm();
         })
         .catch(error => {
-          this.setState({errors:error.response.data.errors.email})
+          // this.setState({errors:error.response.data.errors.email})
         })
     }
 
-
- 
-
-
-    handleMenu = (e) => {
-        console.log(e.target);
-        let menu = document.getElementById("menu")
-        let titleBlock = document.getElementById("titleMenuBlock")
-        let title = document.getElementById("titleMenuTxtWait")
-        let item = document.getElementById("itemsBlock")
-  
-        if (e.target.id !== "hambWait"){
-          e.target = e.target.parentNode;
-        }
-
-        console.log(e.target);
-  
-        if (this.state.onCross) {
-            
-          e.target.childNodes[0].className = "animationHambUpInvWait"
-          e.target.childNodes[1].className = "animationHambMidInvWait"
-          e.target.childNodes[2].className = "animationHambDownInvWait"
-          this.setState({onCross:false},()=>{
-            menu.className = "animMenuInv"
-            title.className = "animTitleInv"
-            titleBlock.className = "animTitleBlockInv"
-            item.className = "animItemsBlockInv"
-            for (let i = 0;i<item.childElementCount;i++){
-              item.childNodes[i].id = "animItemInv"+i.toString()
-            }
-          })
-        } else {
-          e.target.childNodes[0].className = "animationHambUpWait"
-          e.target.childNodes[1].className = "animationHambMidWait"
-          e.target.childNodes[2].className = "animationHambDownWait"
-          this.setState({onCross:true},()=>{
-            menu.className = "animMenu"
-            titleBlock.className = "animTitleBlock"
-            title.className = "animTitle"
-            item.className = "animItemsBlock"
-            for (let i = 0;i<item.childElementCount;i++){
-              item.childNodes[i].id = "animItem"+i.toString()
-            }
-          })
-        }
-        
-      }
-
+  handleInputAnim = () => {
+    var inputTxt = document.getElementsByClassName("inputDarkTitle")[0];
+    var input = document.getElementsByClassName("formInput")[0];
+    inputTxt.style.cssText = "animation: fadeIn 2s 13s both";
+    input.style.cssText = "animation: fadeIn 1s 13.5s both";
+  }
 
 
     render() {
@@ -103,49 +67,8 @@ import "../../css/Views/waiting.css"
         <div className="waiting">
             {this.state.inKey && 
             <>
-            <div className="headerWait">
-              <div id="menu">
-                <div id="titleMenuBlock">
-                  <div id="titleMenuTxtBlock">
-                    <p id="titleMenuTxtWait">Menu</p>
-                  </div>
-                    <div id="crossBlock">
-                  </div>
-                </div>
-                <div id="itemsBlock">
-                  <div className="itemBlock">
-                    <div className="itemTxtBlock">
-                      <p className="itemTxt">Contact</p>
-                    </div>
-                    <div className="itemImgBlock">
-                      <img className="itemImg" src="img\Contact.png" alt="sécurité"/>
-                    </div>
-                    </div>
-                </div>
-              </div>
-              <div className="headerBlock">
-                <div className="logoBlockWait">
-                  <img className="logo" src='img\Logo.png' alt="logo"/>
-                </div>
-                <div className="titleBlockWait">
-                  <p className="titleTxt">L'Ingrédient Secret</p>
-                </div>
-                <div className="hambBlock">
-                  <div id="hambWait" onClick={this.handleMenu}>
-                    <div id="hambUpWait"></div>
-                      <div id="hambMidWait"></div>
-                    <div id="hambDownWait"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="footerBlockIn">
-                <div id="footerBlockWaitIn">
-                        <p className="footerTxtWaitIn">Tous droits réservés</p>
-                        <p className="footerTxtWaitIn">Baptiste MARTY & David ANDREAN</p>
-                        <p className="footerTxtWaitIn">Copyright @</p>
-                </div>
-                </div>
+            <Header title="" dark_theme={true} menuItems={["Contact"]} no_escape={true}/>
+            <Footer dark_theme={true}/>
             </>}
             <div id="titleWaitingBlock">
                 <p id="titleWaitingUp">Les Cités</p>
@@ -166,14 +89,7 @@ import "../../css/Views/waiting.css"
                     <div id="holdTxtBlock">
                         <p id="holdTxt">Le nouveau jeu de piste des Cités des Secrets arrive bientôt, tenez vous prêts !</p>
                     </div>
-                    <div id="newsletterBlock">
-                        <p id="newsletter">Entrez votre e-mail pour être au courant des news !</p>
-                        <form method='POST' onSubmit={this.handleSubmit}>
-                            <input id="emailInput" onChange={this.handleEmailChange} type="text"/>
-                        </form>
-                          <p id="errorWaitTxt">{this.state.errors}</p>
-                    </div>
-                      
+                    <Input change={this.handleEmailChange} dark_theme={true} size="25" title="Rentre ton mail c'est gratuit !" errors={this.state.errors} submit={this.handleSubmit}/>
                     {this.state.validated &&
                     <div id="validationBlock">
                       <svg id="validateSvg" width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">

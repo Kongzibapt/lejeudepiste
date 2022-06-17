@@ -1,0 +1,25 @@
+.amans{
+    flex:1;
+    background-image: url(../../img/Amans.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+    .chestAmans{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chestAmansImg{
+        width:200px;
+        height:auto
+    }

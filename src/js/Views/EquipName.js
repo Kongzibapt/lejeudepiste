@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import "../../css/Views/equipname.css"
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import {change} from '../../features/teamName/teamNameSlice';
+import Button from '../Components/Button';
+import Input from '../Components/Input';
 
 const mapStateToProps = (state) => {
     return {
@@ -25,45 +27,55 @@ const mapDispatchToProps = (dispatch) => {
     constructor(props){
         super(props)
         this.state={
-            teamName:''
+            teamName:'',
+            errors:"",
+            redirect:false
         }
     }
 
+    componentDidMount(){
+        console.log(this.props);
+    }
+
     handleTeamNameChange = e => {
-        this.setState({teamName:e.target.value})
+        this.setState({teamName:e.target.value},()=>{
+            console.log(this.state.teamName);
+        })
     }
 
     handleSubmit = (e) => {
-        this.props.change(this.state.teamName)
+        this.props.change(this.state.teamName);
+        this.setState({redirect:true})
+    }
+
+    handleKeyPress = (e) => {
+        console.log(e.key);
+        if (e.key === "Enter") {
+            this.handleSubmit();
+        }
     }
 
 
     render() {
+        if (this.state.redirect){
+        return(<Redirect to="/secu"/>) 
+        } else{
       return (
-        <div id="home">
-            <Header/>
-            <div id="transpBlock">
-                <div id="transpBox">
-                    <div id="equipNameBlock">
-                        <p id="equipNameTxt">Entrez votre nom d'équipe</p>
-                    </div>
-                    <div id="equipNameInputBlock">
-                        <form>
-                            <input id="equipNameInput" onChange={this.handleTeamNameChange} type="text"/>
-                        </form>
+        <div className="home">
+            <Header title="L'ingrédient secret" dark_theme={true} menuItems={["Sécurité","Paramètres","Statistiques","Contact"]} no_escape={true}/>
+            <div className="transpBlock">
+                <div className="transpBox">
+                    <p className="equipNameTxt">Première énigme...</p>
+                    <div className="equipInputContainer" onKeyPress={this.handleKeyPress}>
+                        <Input enter={this.handleSubmit} change={this.handleTeamNameChange} size="20" title="Quel est le nom de votre équipe ?" errors={this.state.errors} submit={this.handleSubmit}/>
                     </div>
                 </div>
             </div>
-            <div id="buttonBlock">
-                <Link id="link" to="/secu" onClick={this.handleSubmit}>
-                    <div id="greenButton">
-                        <p id="buttonTxt">Suivant</p>
-                    </div>
-                </Link>
-            </div>
+            <Button onClick={this.handleSubmit} text="Let's Go !" color="green"/>
             <Footer/>
         </div>
       )
+        }
     }
   }
 

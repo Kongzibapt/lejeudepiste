@@ -3,12 +3,23 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        height : 100%;
         width:100%;
         margin-left:auto;
         margin-right:auto;
         flex-direction:column;
     }
+
+        #goToInventory{
+            position:absolute;
+            top:15%;
+            left:0%;
+        }
+
+        @keyframes goToInventory {
+            /* 70% {top:-17.9%;left:-23.1%;opacity:1} */
+            80% {opacity:1}
+            100% {top:-32%;left:-33%;opacity:0}
+        }
 
     .compassTitle{
         width:100%;
@@ -44,14 +55,31 @@
         .logoCompass{
             height:180px;
             width:auto;
-            
+        }
+
+        #resizeLogo{
+            animation: resizeLogo ease-out 2.5s both;
+        }
+
+        @keyframes resizeLogo {
+            100% {height:30px}
         }
 
         .aiguille{
             position:absolute;
-            height:110px;
+            height:30px;
             width:auto;
-            top:45px;
+            top:-20px;
+            z-index:2;
+        }
+
+        #resizeAiguille{
+            animation: resizeAiguille ease-out 2.5s both;
+            
+        }
+
+        @keyframes resizeAiguille{
+            100% {height:10px;top:38%}
         }
 
     .coord{
@@ -70,8 +98,7 @@
     }
 
         .aiguille{
-            height:130px;
-            margin-top:25px;
+            top:0px;
         }
 
 }

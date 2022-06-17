@@ -44,7 +44,7 @@
 
 #titleWaitingUp{
     
-    font-size:14vw;
+    font-size:60px;
     margin:0;
     font-family: 'Sansita Swashed',cursive;
     color:white;
@@ -58,7 +58,7 @@
 
 #titleWaitingDown{
     padding-top:8vh;
-    font-size:14vw;
+    font-size:60px;
     margin:0;
     font-family: 'Sansita Swashed',cursive;
     color:white;
@@ -97,151 +97,6 @@
     100% {opacity:1}
 }
 
-.headerWait{
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 45vh;
-    background: linear-gradient(
-    180deg
-    , #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%);
-}
-
-    .headerBlock{
-        margin-top:10px;
-        display:flex;
-    }
-
-        .logoBlockWait{
-            z-index:1;
-            flex:1;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            animation: fadeIn 2s forwards;
-        }
-        .logo{
-            z-index:1;
-            height: 60px;
-            width:auto;
-        }
-    
-    .titleBlockWait{
-        opacity:0;
-        flex:2;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-        .titleTxt{
-            font-size:16px;
-            font-family: 'Sansita Swashed',cursive;
-            color:white;
-            text-align:center;
-            font-weight: 700;
-        }
-    
-    .hambBlock{
-        flex:1;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-        #hambWait{
-            height:30px;
-            width:40px;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            z-index:2;
-        }
-
-            #hambUpWait{
-                position:relative;
-                height:6px;
-                width:40px;
-                background-color: black;
-                border-radius:1vw;
-                /* animation: fadeIn 2s forwards; */
-            }
-
-            #hambMidWait{
-                position:relative;
-                top:0.2vh;
-                height:6px;
-                width:40px;
-                background-color: black;
-                border-radius:1vw;
-                /* animation: fadeIn 2s forwards; */
-            }
-
-            #hambDownWait{  
-                position:relative;
-                top:0.4vh;
-                height:6px;
-                width:40px;
-                background-color: black;
-                border-radius:1vw;
-                /* animation: fadeIn 2s forwards; */
-            }   
-
-            .animationHambUpWait{
-                animation: hambUpWait 2s forwards;
-            }
-
-            .animationHambMidWait{
-                animation: hambMidWait 2s forwards;
-            }
-
-            .animationHambDownWait{
-                animation: hambDownWait 1.5s forwards;
-            }
-
-            @keyframes hambUpWait {
-                0%   {background-color:black;top:0vh}
-                100% {background-color:#C31515;transform:rotate(45deg);top:15px}
-            }
-
-            @keyframes hambMidWait {
-                0%   {background-color:black}
-                100% {background-color:#C31515;transform:rotate(-45deg)}
-            }
-
-            @keyframes hambDownWait {
-                0%   {opacity : 1}
-                100% {opacity : 0}
-            }
-
-            .animationHambUpInvWait{
-                animation: hambUpInvWait 2s forwards;
-            }
-
-            .animationHambMidInvWait{
-                animation: hambMidInvWait 2s forwards;
-            }
-
-            .animationHambDownInvWait{
-                animation: hambDownInvWait 1.5s forwards;
-            }
-
-            @keyframes hambUpInvWait {
-                0%   {background-color:#C31515;transform:rotate(45deg);top:15px}
-                100% {background-color:black;top:0vh}
-                
-            }
-
-            @keyframes hambMidInvWait {
-                0%   {background-color:#C31515;transform:rotate(-45deg)}
-                100% {background-color:black}
-            }
-
-            @keyframes hambDownInvWait {
-                0%   {opacity : 0}
-                100% {opacity : 1}
-            }
 
 #footerBlockIn{
     position:absolute;
@@ -308,56 +163,6 @@
     100% {opacity:0}
 }
 
-#newsletterBlock{
-    width:80vw;
-    position:absolute;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#newsletter{
-    margin:0;
-    font-family: 'Sansita Swashed',cursive;
-    color:black;
-    text-align:center;
-    font-weight: 700;
-    animation: fadeIn 2s 13s both;
-    margin-bottom:3vh;
-}
-
-#emailInput{
-        min-height: 30px;
-        font-size:5vw;
-        padding-bottom:0.5vh;
-        height:3.5vh;
-        width:60vw;
-        font-family: 'Sansita Swashed',cursive;
-        color:black;
-        border-radius:12px;
-        padding-left:2vw;
-        border: 2.5px solid #000000;
-        box-sizing: border-box;
-        box-shadow: -0.8vw 1.2vw 0.8vw rgba(0, 0, 0, 0.4);
-        opacity:0;
-        animation : fadeIn 1s 13.5s forwards;
-    }
-
-    #emailInput:focus{
-        outline:none;
-        border: 1vw solid #057B26;
-    }
-
-    #errorWaitTxt{
-        font-weight: 700;
-        text-align:center;
-        height:3.5vh;
-        width:60vw;
-        font-family: 'Sansita Swashed',cursive;
-        color:#C31515;
-        font-size:20px;
-    }
 
     #titleMenuTxtWait{
         color:white;
@@ -371,7 +176,8 @@
         padding-top:15px;
     }
 
-    .animNewsletterBlock{
+    #animNewsletterBlock{
+        position:absolute;
         animation: fadeOut 0.5s forwards;
     }
 
@@ -409,7 +215,7 @@
     }
 
     #validateTxt{
-        font-size:8vw;
+        font-size:40px;
         margin:0;
         font-family: 'Sansita Swashed',cursive;
         color:black;
@@ -418,51 +224,27 @@
         animation: fadeIn 2s both;
     }
 
-    @media (min-width:426px) {
-        .headerBlock{
-            margin-top:30px;
-        }
-
-        .logo{
-            height: 100px;
-        }
-
-        #hambWait{
-            height:60px;
-            width:80px;
-        }
-
-            #hambUpWait{
-                height:12px;
-                width:80px;
-               }
-
-            #hambMidWait{
-                height:12px;
-                width:80px;
-            }
-
-            #hambDownWait{  
-                height:12px;
-                width:80px;
-            }
+    @media (min-width:600px) and (min-height:800px){
+        
             
         #yellowBack{
             font-size:40px;
         }
 
-            #errorWaitTxt{
-                font-size:30px;
-            }
-
-            #titleMenuTxtWait{
-                font-size:80px;
-                }
-
-                @keyframes hambUpWait {
-                    0%   {background-color:black;top:0vh}
-                    100% {background-color:#C31515;transform:rotate(45deg);top:27px}
-                }
-
+        @keyframes glowUp {
+            40% {height:80%;width:105%;left:-4%}
+            100% {height:2000%;width:2400%;left:-1150%}
+        }
     
     }
+
+    @media (min-width:1000px){
+        @keyframes glowUp {
+            40% {height:80%;width:105%;left:-4%;transform: rotate(0deg);}
+            60% {height:80%;width:105%;left:-4%;transform: rotate(90deg);}
+            100% {height:4000%;width:4800%;left:-2000%;transform: rotate(90deg);}
+        }
+
+
+    }
+

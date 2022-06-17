@@ -2,7 +2,6 @@ import React from "react"
 import { connect } from "react-redux";
 import "../../css/Components/inventoryTimeBonus.css"
 import {start} from '../../features/time/timeSlice';
-import Inventory from "./Inventory";
 
 const mapStateToProps = (state) => {
     return {
@@ -33,7 +32,7 @@ class InventoryTimeBonus extends React.Component {
         <div className="inventoryTimeBonus">
             <div className="inventoryTimeBonusBlock">
                 <div className="inventory">
-                    <div className="inventoryBlock" onClick={this.props.handleInventory}>
+                    <div className="inventoryBlock" onClick={() => {!this.props.disabled && this.props.handleInventory()}}>
                         <img className="inventoryImg" src="img/Backpack.png" alt="backpack"/>
                     </div>
                 </div>
@@ -43,14 +42,14 @@ class InventoryTimeBonus extends React.Component {
                             <img className="hourglassImg" src="img/Hourglass.png" alt="hourglass"/>
                         </div>
                         <div className="timeTxtBlock">
-                            <p className="timeTxt">{this.props.time.heures > 0 && this.props.time.heures+ " : "} {this.props.time.minutes} : {this.props.time.secondes}</p>
+                            <p className="timeTxt" style={{fontSize:this.props.time.heures > 0 ? "15px" : "18px"}} >{this.props.time.heures > 0 && this.props.time.heures+ " : "} {this.props.time.minutes} : {this.props.time.secondes}</p>
                             <p className="timeTxtBonus"></p>
                         </div>
                     </div>
                 </div>
                 <div className="bonus">
-                    <div className="bonusBlock" onClick={this.props.handleBonus}>
-                    <img className="bonusImg" src="img/bonus.png" alt="bonus"/>
+                    <div className="bonusBlock" onClick={()=>{!this.props.disabled && this.props.handleBonus()}}>
+                    <img className="bonusImg" src="img/Inventory/bonus.png" alt="bonus"/>
                     </div>
                 </div>
             </div>

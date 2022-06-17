@@ -3,7 +3,7 @@
     top:0;
     width:100vw;
     height:45%;
-    background:linear-gradient(180deg, #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%);
+    /* background:linear-gradient(180deg, #101010 23.96%, #101010 23.97%, rgba(49, 52, 54, 0) 83.33%); */
     overflow:hidden;
 }
 
@@ -42,16 +42,16 @@
 }
 
     #lightTitleTxt{
-        font-size:25px;
+        font-size:26px;
         font-family: 'Sansita Swashed',cursive;
         color:white;
         text-align:center;
-        font-weight: 700;
+        font-weight: 900;
         margin:0;
     }
 
     #darkTitleTxt{
-        font-size:25px;
+        font-size:27px;
         font-family: 'Sansita Swashed',cursive;
         color:black;
         text-align:center;
@@ -73,7 +73,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        z-index:2;
+        z-index:3;
     }
 
         #lightHambUp{
@@ -235,7 +235,7 @@
             width:60px;
         }
         #darkHambMid{
-            height:12px;
+            height:8px;
             width:60px;
         }
 

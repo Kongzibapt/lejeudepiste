@@ -1,20 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import "../../css/Views/test.css"
-import Button from '../Components/Button';
-import CasesToFill from '../Components/CasesToFill';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
-import Input from '../Components/Input';
 import InventoryTimeBonus from '../Components/InventoryTimeBonus';
-import Validated from '../Components/Validated';
 import {start} from '../../features/time/timeSlice';
 import Inventory from '../Components/Inventory';
 import Bonus from '../Components/Bonus';
-import Choice from '../Components/Choice';
-import SplittedText from '../Components/SplittedText';
 import Saleugos from '../Components/Saleugos';
-import Compass from '../Components/Compass';
+import Objects from '../Components/Objects';
 
 
 const mapStateToProps = (state) => {
@@ -91,8 +85,8 @@ const mapDispatchToProps = (dispatch) => {
 
     render() {
       return (
-        <div id="home">
-            <Header title="L'ingrédient secret" dark_theme={false} menuItems={["Contact"]} no_escape={true}/>
+        <div className="home">
+            <Header title="L'ingrédient secret" dark_theme={true} menuItems={["Contact"]} no_escape={true}/>
             <InventoryTimeBonus handleInventory={this.handleInventory} handleBonus={this.handleBonus}/>
             {/* <Inventory display={this.state.display}/> */}
             {/* <div style={{height:"150px",zIndex:"1",display:"flex",width:"100%",justifyContent:"center",alignItems:"center"}}> */}
@@ -107,7 +101,8 @@ const mapDispatchToProps = (dispatch) => {
               <div className="testBlock" >
                 {/* <Choice title="Musée Soulages" src="img/Soulages.png"/> */}
                 {/* <SplittedText tabtxt={this.state.tabtxt}/> */}
-                <Compass/>
+                {/* <Compass/> */}
+                <Objects objects={["Page_Déchirée","Chest","Cactus"]}/>
               </div>
             </div> 
             } 

@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 function incrementTime(state) {
-    // setInterval((state){
     let time = state.value
     parseInt(time.secondes);
     time.secondes++;
@@ -23,12 +22,12 @@ function incrementTime(state) {
         }
     }
     state.value = time;
-    let timeTxt = document.getElementsByClassName("timeTxt")[0];
-    if (time.heures > 0){
-        timeTxt.style.cssText += "font-size:15px";
-    } else {
-        timeTxt.style.cssText += "font-size:18px";
-    }
+    // let timeTxt = document.getElementsByClassName("timeTxt")[0];
+    // if (time.heures > 0){
+    //     timeTxt.style.cssText += "font-size:15px";
+    // } else {
+    //     timeTxt.style.cssText += "font-size:18px";
+    // }
 }
 
 function timeBonus(state, action) {

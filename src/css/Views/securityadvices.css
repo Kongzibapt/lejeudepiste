@@ -1,49 +1,22 @@
-#home{
-    background-image: url(../../img/Fond.png);
-    height: 100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-#transpBlock{
-    z-index:1;
-    height:40vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 
-    #transpBox{
-        height:100%;
-        width:85vw;
-        background: rgba(0, 0, 0, 0.75);
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-        #secuTitleBlock{
-            flex:1;
+        .secuTitleBlock{
+            height:50px;
             display:flex;
             justify-content: center;
             align-items: center;
         }
 
-            #secuTitleTxt{
+            .secuTitleTxt{
                 margin:0;
                 color:white;
-                font-size:6vw;
+                font-size:25px;
                 font-family: 'Sansita Swashed',cursive;
                 font-weight: 700;
             }
 
-        #secuContentBlock{
-            flex:4;
+        .secuContentBlock{
+            height:230px;
             width:100%;
             display:flex;
             justify-content: center;
@@ -61,21 +34,42 @@
                 flex-direction: column;
             }
 
+                .secuContentTitleBlock{
+                    margin-top:10px;
+                    margin-bottom:10px;
+                    width:100%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .secuContentTitle{
+                        margin:0;
+                        color:white;
+                        font-size:15px;
+                        font-family: 'Sansita Swashed',cursive;
+                        font-weight: 400;
+                        animation:fade 2s forwards;
+                        text-align:center;
+                    }
+
                 #secuContentTxtBlock{
                     flex:6;
                     width:100%;
                     display:flex;
                     justify-content: flex-start;
                     align-items: flex-start;
+                    overflow:auto;
                 }
             
-                    #secuContentTxt{
-                        margin-top:1vh;;
+                    .secuContentTxt{
+                        margin:0;
                         color:white;
-                        font-size:4vw;
+                        font-size:10px;
                         font-family: 'Sansita Swashed',cursive;
-                        font-weight: 400;
+                        font-weight: 200;
                         animation:fade 2s forwards;
+                        text-align:justify;
                     }
 
 
@@ -97,8 +91,8 @@
 
                         } */
 
-                            #tap{
-                                height:1.2vh;
+                            .tap{
+                                height:7px;
                                 width:auto;
                                 position:relative;
                                 bottom:0;
@@ -111,19 +105,19 @@
 
 
 
-                        #secuTapTxt{
+                        .secuTapTxt{
                             margin:0;
                             padding-right:2vw;
                             padding-bottom:0.4vh;
                             color:white;
-                            font-size:3.2vw;
+                            font-size:10px;
                             font-family: 'Sansita Swashed',cursive;
                             font-weight: 400;
                         }
 
 
         #secuAcceptBlock{
-            flex:1;
+            height:40px;
             width:95%;
             display:flex;
             justify-content: center;
@@ -132,20 +126,20 @@
 
             #acceptCaseBlock{
                 flex:1;
-                height:50%;
+                height:50px;
                 display:flex;
                 justify-content: center;
                 align-items: center;
             }
 
                 #acceptCase{
-                    width:35%;
-                    height:55%;
+                    width:15px;
+                    height:15px;
                     background-color: white;
-                    border:1vw solid #000000;
+                    border:2px solid #000000;
                     filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
-                    border-radius:2vw;
-                    box-shadow: inset 1.2vw 0.6vh 0.5vh rgba(0, 0, 0, 0.56);
+                    border-radius:5px;
+                    box-shadow: inset 3px 2px 2px rgba(0, 0, 0, 0.46);
                     display:flex;
                     justify-content: center;
                     align-items: center;
@@ -153,9 +147,9 @@
                 
                     #check{
                         position:relative;
-                        bottom:0.5vh;
-                        left:0.3vw;
-                        height:4.2vh;
+                        bottom:2px;
+                        left:2px;
+                        height:30px;
                         width:auto;
                     }
 
@@ -166,49 +160,24 @@
                 #acceptTxt{
                     margin:0;
                     color:white;
-                    font-size:4vw;
+                    font-size:13px;
                     font-family: 'Sansita Swashed',cursive;
                     font-weight: 400;
                     padding-left:1vw;
                 }
 
-#buttonBlock{
-    height:20vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+@media (min-height:800px) {
+
+    .secuTitleBlock{
+        height:60px
+    }
+        
+    .secuContentBlock {
+        height:280px;
+    }
 }
+    
+@media (min-width:600px) {
 
-    #greenButton{
-        background:linear-gradient(180deg, #1F682F 0%, #07160A 100%);
-        border:1vw solid #000000;
-        filter:drop-shadow(-1vw 1vw 1vw rgba(0, 0, 0, 0.75));
-        height:6vh;
-        border-radius:10vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding:0 5vw 0.8vh 5vw;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
-
-    #greenButton:active{
-        background:linear-gradient(180deg,#07160A 0% ,  #1F682F 100%);
-    }
-
-        #buttonTxt{
-            margin:0;
-            -webkit-user-select: none; /* Safari */        
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* IE10+/Edge */
-            user-select: none; /* Standard */
-            color:white;
-            font-size:6vw;
-            font-family: 'Sansita Swashed',cursive;
-            font-weight: 700;
-        }
-
-            #link{
-                text-decoration:none;
-            }
+     
+}

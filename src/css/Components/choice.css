@@ -1,10 +1,10 @@
 .choice{
     overflow: hidden;
     position: relative;
+    width:100%;
 }
 
     .choiceTitle{
-        margin-top:20px;
         margin-bottom:20px;
     }
 
@@ -25,7 +25,6 @@
 
     .choiceContent {
         float: left;
-        height:280px;
         width:100%;
         display:flex;
         justify-content: space-between;
@@ -53,7 +52,7 @@
         }
 
             .choiceImg{
-                height: 180px;
+                height: 140px;
                 width: auto;
             }
 

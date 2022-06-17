@@ -1,0 +1,42 @@
+.vestiges{
+    flex:1;
+    background-image: url(../../img/Armagnac_back.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+    .crownPart{
+        display:flex;
+        height:100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .crown{
+            height:75%;
+            display:flex;
+            justify-content:center
+        }
+
+            .crownImg{
+                width:230px;
+                height:auto
+            }
+        
+        .clueVestiges{
+            font-size:22px;
+            color:white;
+            margin:0;
+            font-family: 'Sansita Swashed',cursive;
+            text-align:center;
+            font-weight: 400;
+            letter-spacing:4px
+        }

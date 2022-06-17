@@ -3,6 +3,11 @@ import "../../css/Components/casesToFill.css"
 
  class CasesToFill extends React.Component {
 
+  // ---------------------------------- PROPS ----------------------------------
+  // nbCases : nombre de cases à remplir
+  // code : code à déchiffrer
+  // title : titre du code à déchiffrer
+  // returnResult : fonction à déclencher si le code est correct
 
     constructor(props){
         super(props)
@@ -12,15 +17,27 @@ import "../../css/Components/casesToFill.css"
 
     componentDidMount(){
         this.putMarginOnCases();
+        this.handleSize();
+  }
+
+  handleSize = () => {
+    if (this.props.nbCases > 9){
+      let cases = document.getElementsByClassName("case");
+      for (let i = 0; i < this.props.nbCases-1;i++){
+        cases[i].style.cssText += "width:15px;height:23px;"
+      }
+    }
   }
 
   putMarginOnCases = () => {
     let cases = document.getElementsByClassName("case");
     for (let i = 0; i < this.props.nbCases-1;i++){
         if (window.innerWidth > 426){
-            cases[i].style.cssText = "margin-right:8px;"
-        }else{
-            cases[i].style.cssText = "margin-right:5px;"
+          cases[i].style.cssText += "margin-right:8px;"
+        }else if (this.props.nbCases > 9){
+          cases[i].style.cssText += "margin-right:3px;"
+        } else {
+          cases[i].style.cssText += "margin-right:5px;"
         }
     }
   }
@@ -45,17 +62,32 @@ import "../../css/Components/casesToFill.css"
     let word = ""
     for (let i = 0 ; i < answerCasesBlock.childElementCount; i++) {
       currentLetter = answerCasesBlock.childNodes[i].value.toUpperCase();
+      console.log(currentLetter);
+      console.log(this.props.code[i])
       if (currentLetter === this.props.code[i]){
         answerCasesBlock.childNodes[i].className = "greenCase"
-      } else {
+      } else if(i !== this.props.clue){
         answerCasesBlock.childNodes[i].className = "redCase"
       }
-      word += currentLetter;
+      i === this.props.clue ? word += this.props.code[i] : word += currentLetter;
     }
-    if (word === this.props.code){
-    //   this.setState({notif:true})
-        this.props.returnResult(true);
+    if (this.codeFound(word)){
+      this.props.returnResult(true);
     }
+  }
+
+  codeFound = (word) => {
+    console.log(word);
+    let codeGood = true;
+    let i = 0;
+    while (codeGood && i < this.props.code.length){
+      if (this.props.code[i] !== word[i] && i !== this.props.clue){
+        codeGood = false;
+      }
+      i++;
+    }
+    console.log(codeGood);
+    return codeGood;
   }
 
   handleChange = (e) => {
@@ -71,10 +103,15 @@ import "../../css/Components/casesToFill.css"
     render() {
         const cases = [];
         for (let i = 0; i < this.props.nbCases;i++){
+            if (this.props.clue && this.props.clue === i){
+              cases.push(
+                <p key={i} className="clueCase">{this.props.code[i]}</p>
+              )
+            } else {
             cases.push(
-                <input className="case" type="text" maxLength={1} onChange={this.handleChange} onKeyUp={this.handleKeyUp}/>
+                <input key={i} className="case" type="text" maxLength={1} onChange={this.handleChange} onKeyUp={this.handleKeyUp}/>
             )
-            
+            }
             // i !== this.props.nbCases && (cases[i].props.set("style={{margin-right:10px}}"));
         }
         return (

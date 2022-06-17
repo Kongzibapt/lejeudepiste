@@ -3,9 +3,10 @@
     bottom:0;
     width:100vw;
     height:45%;
-    background: linear-gradient(180deg, #101010 23.96%, rgba(49, 52, 54, 0) 83.33%);
+    /* background: linear-gradient(180deg, #101010 23.96%, rgba(49, 52, 54, 0) 83.33%); */
     transform: rotate(-180deg);
     overflow: hidden;
+    z-index:1
 }
 
     .animFoot{
@@ -18,7 +19,7 @@
     }
 
 #footerLightBlock{
-    height:30%;
+    height:20%;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -27,7 +28,7 @@
     overflow: hidden; 
 }
 #footerDarkBlock{
-    height:30%;
+    height:20%;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -37,7 +38,7 @@
 }
 
     .footerTxt{
-            font-size:12px;
+            font-size:10px;
             margin:0;
             font-family: 'Sansita Swashed',cursive;
             text-align:center;
@@ -47,12 +48,12 @@
 
 @media (min-width:600px) {
     .footerTxt{
-        font-size:16px;
+        font-size:14px;
 }
 }
 
 @media (min-height:800px) {
     .footerTxt{
-        font-size:16px;
+        font-size:14px;
 }
 }
