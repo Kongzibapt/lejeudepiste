@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce65b8e4.chunk.css",
-    "main.js": "/static/js/main.a38ed109.chunk.js",
-    "main.js.map": "/static/js/main.a38ed109.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2bc83920.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2bc83920.js.map",
-    "static/js/2.b1936504.chunk.js": "/static/js/2.b1936504.chunk.js",
-    "static/js/2.b1936504.chunk.js.map": "/static/js/2.b1936504.chunk.js.map",
+    "main.css": "/static/css/main.2be5ebdf.css",
+    "main.js": "/static/js/main.fd6850ce.js",
+    "static/media/Mazel_back.png": "/static/media/Mazel_back.4a7b46fb5db69252a9ec.png",
+    "static/media/Armagnac_back.png": "/static/media/Armagnac_back.b05a5d46fda0022f4f5e.png",
+    "static/media/Fond_Desktop.png": "/static/media/Fond_Desktop.e0bb053b45059f713863.png",
+    "static/media/Pierre.jpg": "/static/media/Pierre.f8dc7f6c5b5671417c3b.jpg",
+    "static/media/Amans.jpg": "/static/media/Amans.951b9ed8def71b98210b.jpg",
+    "static/media/Fabie_back.png": "/static/media/Fabie_back.74bab6fc36d6f14e3a3a.png",
+    "static/media/Fond.png": "/static/media/Fond.e9a176f46b7c0891ebd0.png",
+    "static/media/Parchemin.png": "/static/media/Parchemin.5127ae1ef16c6b31d627.png",
+    "static/media/KioDroi.png": "/static/media/KioDroi.31412063dcb2accc50c1.png",
+    "static/media/KioGau.png": "/static/media/KioGau.ba5ad206a0d4e3c88920.png",
+    "static/media/Museum.png": "/static/media/Museum.8b95367e36ad215410ec.png",
     "index.html": "/index.html",
-    "static/css/main.ce65b8e4.chunk.css.map": "/static/css/main.ce65b8e4.chunk.css.map",
-    "static/js/2.b1936504.chunk.js.LICENSE.txt": "/static/js/2.b1936504.chunk.js.LICENSE.txt",
-    "static/media/amans.css": "/static/media/Amans.951b9ed8.jpg",
-    "static/media/vestiges.css": "/static/media/Armagnac_back.b05a5d46.png",
-    "static/media/fabie.css": "/static/media/Fabie_back.74bab6fc.png",
-    "static/media/direction.css": "/static/media/Fond.e9a176f4.png",
-    "static/media/wrongDevice.css": "/static/media/Fond_Desktop.e0bb053b.png",
-    "static/media/tuto.css": "/static/media/KioGau.ba5ad206.png",
-    "static/media/mazel.css": "/static/media/Mazel_back.4a7b46fb.png",
-    "static/media/museum.css": "/static/media/Museum.8b95367e.png",
-    "static/media/kiosqueenigma.css": "/static/media/Parchemin.5127ae1e.png",
-    "static/media/pierre.css": "/static/media/Pierre.f8dc7f6c.jpg"
+    "main.2be5ebdf.css.map": "/static/css/main.2be5ebdf.css.map",
+    "main.fd6850ce.js.map": "/static/js/main.fd6850ce.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2bc83920.js",
-    "static/js/2.b1936504.chunk.js",
-    "static/css/main.ce65b8e4.chunk.css",
-    "static/js/main.a38ed109.chunk.js"
+    "static/css/main.2be5ebdf.css",
+    "static/js/main.fd6850ce.js"
   ]
 }
